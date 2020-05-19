@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-// import Logo from "../subcomponents/navbar/Logo";
 
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
-// import Logo from "./subcomponents/navbar/Logo";
+import Logo from "./subcomponents/navbar/Logo";
+import Menu from "./subcomponents/navbar/Menu";
 
 import useStyles from "../styles/components/navbarStyle";
 import ThemeContext from "../theme-context";
@@ -14,11 +14,13 @@ export default function Navbar() {
   const themes = useContext(ThemeContext);
 
   console.log(themes);
-
   return (
     <AppBar className={classes.appbar} position="static" style={themes}>
       <Toolbar>
-        <div>Hola Mundo</div>
+        <div className={classes.navbarContainer}>
+          <Logo />
+          <Menu />
+        </div>
       </Toolbar>
     </AppBar>
   );
