@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Navbar() {
+function useNavbar() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -15,4 +15,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default useNavbar;
