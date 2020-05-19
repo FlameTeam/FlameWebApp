@@ -1,5 +1,6 @@
 import React from "react";
 
+//App can return <Compononents/>
 function App() {
   return (
     <div className="App">
