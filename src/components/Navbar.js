@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
+import { AppBar, Toolbar, Box } from "@material-ui/core";
 
 import Logo from "./subcomponents/navbar/Logo";
 import Menu from "./subcomponents/navbar/Menu";
@@ -17,10 +16,10 @@ export default function Navbar() {
   return (
     <AppBar className={classes.appbar} position="static" style={themes}>
       <Toolbar>
-        <div className={classes.navbarContainer}>
+        <Box className={classes.navbarContainer}>
           <Logo />
           <Menu />
-        </div>
+        </Box>
       </Toolbar>
     </AppBar>
   );

@@ -1,21 +1,19 @@
 import React from "react";
 
-import { List, ListItem } from "@material-ui/core";
-
 import useStyles from "../../../styles/subcomponents/navbar/menuStyle";
 
 export default function Menu() {
   const classes = useStyles();
 
   return (
-    <div className={classes.menuContainer}>
-      <List className={classes.list}>
-        <ListItem className={classes.listItem}>Inicio</ListItem>
-        <ListItem className={classes.listItem}>Servicios</ListItem>
-        <ListItem className={classes.listItem}>Proyectos</ListItem>
-        <ListItem className={classes.listItem}>Blog</ListItem>
-        <ListItem className={classes.listItem}>Contacto</ListItem>
-      </List>
-    </div>
+    <ul className={classes.list}>
+      <li alignItems="center" className={classes.listItem}>
+        Inicio
+      </li>
+      <li className={classes.listItem}>Servicios</li>
+      <li className={classes.listItem}>Proyectos</li>
+      <li className={classes.listItem}>Blog</li>
+      <li className={classes.listItem}>Contacto</li>
+    </ul>
   );
 }
