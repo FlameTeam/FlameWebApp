@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 20px;
+  text-align: center;
+
+  width: 256px;
+  height: 303px;
+
+  border: 1px solid #F45C43;
+  box-sizing: border-box;
+  border-radius: 80px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 360px;
+  padding: 10px 10px;
+}
+
+.image{
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+}
+
+/* Add some padding inside the rectangle container */
+.container {
+  padding: 0px 16px;
+
+  font-family: Contrail One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.loading-item {
+  background: white;
+  align-items: center;
+}
+
+.glow-text span {
+  animation: glow 1.5s ease-in-out infinite;
+  background: #eee;
+  color: transparent;
+  cursor: progress;
+  display: inline-block;
+}
+.loading-item .glow-checkbox {
+  margin-right: 16px;
+  width: 12px;
+  height: 12px;
+}
+.loading-item + .loading-item {
+  border-top: 1px solid #f0f9fb;
+}
+.list-items {
+  position: relative;
+  background: white;
+  min-height: 288px;
+}
+.list-items .select-placeholder {
+  border: none;
+  width: 48px;
+}
+
+.title-wrapper {
+  padding-left: 87px;
+  font-family: Contrail One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 53px;
+
+  color: #F45C43;
+
+}
+
+.service-section{
+  padding-left: 42px;
+}
