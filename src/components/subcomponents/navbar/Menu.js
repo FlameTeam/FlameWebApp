@@ -1,5 +1,7 @@
 import React from "react";
 
+import Link from "@material-ui/core/Link";
+
 import useStyles from "../../../styles/subcomponents/navbar/menuStyle";
 
 export default function Menu() {
@@ -7,13 +9,21 @@ export default function Menu() {
 
   return (
     <ul className={classes.list}>
-      <li alignItems="center" className={classes.listItem}>
-        Inicio
+      <li>
+        <Link className={classes.listItemLink}>Inicio</Link>
       </li>
-      <li className={classes.listItem}>Servicios</li>
-      <li className={classes.listItem}>Proyectos</li>
-      <li className={classes.listItem}>Blog</li>
-      <li className={classes.listItem}>Contacto</li>
+      <li>
+        <Link className={classes.listItemLink}>Servicios</Link>
+      </li>
+      <li>
+        <Link className={classes.listItemLink}>Proyectos</Link>
+      </li>
+      <li>
+        <Link className={classes.listItemLink}>Blog</Link>
+      </li>
+      <li>
+        <Link className={classes.listItemLink}>Contacto</Link>
+      </li>
     </ul>
   );
 }

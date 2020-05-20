@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar";
 import ThemeContext, { themes } from "./theme-context";
 
 function App() {
-  const themeImport = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
 
   return (
-    <ThemeContext.Provider value={themes.mainTheme}>
-      <div style={themeImport}>
+    <ThemeContext.Provider theme={themes.mainTheme}>
+      <div style={theme}>
         <Navbar />
       </div>
     </ThemeContext.Provider>
