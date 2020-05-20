@@ -17,6 +17,6 @@ some of the components are built with storybook
 
 	npm start
 
-### Check changes
+#### Check changes
 
   npm test

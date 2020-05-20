@@ -1,18 +1,16 @@
 import React from 'react';
-
 import Card from './Card';
-import '../styles/cards.css';
+import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 
 function CardSection({ cards }) {
+  const classes = useStyles();
 
   const NoData = (
-    <div className="column">
-      <div className="card loading-item">
-        <span className="glow-text">
-          <img src="img/team.png" alt="Avatar" className="image" />
-        </span>
-        <div className="container">
-          <span className="glow-text">
+    <div className={classes.column}>
+      <div className={classes.card}>
+        <img src="img/team.png" alt="Avatar" className={classes.image} />
+        <div className={classes.container}>
+          <span className={classes.glowText}>
             <span>Loading</span> <span>cool</span> <span>state</span>
           </span>
         </div>
@@ -22,7 +20,7 @@ function CardSection({ cards }) {
 
   if (cards.length === 0) {
     return (
-      <div className="row">
+      <div className={classes.row}>
         {NoData}
         {NoData}
         {NoData}
@@ -31,9 +29,9 @@ function CardSection({ cards }) {
   }
 
   return (
-    <div className="row">
+    <div className={classes.row}>
       {cards.map(card => (
-        <div className="column">
+        <div key={card.id} className={classes.column}>
           <Card key={card.id} card={card}/>
         </div>
       ))}

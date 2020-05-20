@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import useStyles from "../styles/components/serviceStyle";
 
-import CardSection from './CardSection';
+import CardSection from './subcomponents/cards/CardSection';
 import { defaultCards } from '../stories/CardSection.stories';
 
 export function ServiceSection({ error }) {
+  const classes = useStyles();
+
   if (error) {
     return (
       <div className="page lists-show">
@@ -18,10 +21,10 @@ export function ServiceSection({ error }) {
   }
 
   return (
-    <section id="servicios" className="service-section py-7">
+    <section id="servicios" className={classes.serviceSection}>
       <nav>
         <h1>
-          <span className="title-wrapper">Nuestros Servicios</span>
+          <span className={classes.titleWrapper}>Nuestros Servicios</span>
         </h1>
       </nav>
       <CardSection cards={defaultCards} />
