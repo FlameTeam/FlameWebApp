@@ -1,18 +1,24 @@
-import React, { useState, useEffect } from "react";
+// import React, { useContext } from "react";
+import React from "react";
 
-function Navbar() {
-  const [count, setCount] = useState(0);
+import { AppBar, Toolbar, Box } from "@material-ui/core";
 
-  useEffect(() => {
-    console.log(`You clicked ${count} times`);
-  });
+import Logo from "./subcomponents/navbar/Logo";
+import Menu from "./subcomponents/navbar/Menu";
+
+import useStyles from "../styles/components/navbarStyle";
+
+export default function Navbar() {
+  const classes = useStyles();
 
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
+    <AppBar className={classes.appbar} position="static">
+      <Toolbar>
+        <Box className={classes.navbarContainer}>
+          <Logo />
+          <Menu />
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
-
-export default Navbar;

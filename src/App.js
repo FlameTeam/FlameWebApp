@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import Navbar from "./components/Navbar";
 
-//App can return <Compononents/>
+import ThemeContext, { themes } from "./theme-context";
+
 function App() {
+  const themeImport = useContext(ThemeContext);
+
   return (
-    <React.Fragment>
-      <div className="App">
-        <h1>Flame Web App</h1>
+    <ThemeContext.Provider value={themes.mainTheme}>
+      <div style={themeImport}>
+        <Navbar />
       </div>
-      <Navbar />
-    </React.Fragment>
+    </ThemeContext.Provider>
   );
 }
 
