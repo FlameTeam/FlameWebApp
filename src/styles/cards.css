@@ -38,11 +38,11 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Float four columns side by side */
-.column {
+/* Create three equal columns that floats next to each other */
+.row .column {
   float: left;
-  width: 360px;
-  padding: 10px 10px;
+  width: 30%;
+  padding: 10px;
 }
 
 .image{
@@ -98,7 +98,7 @@
 }
 
 .title-wrapper {
-  padding-left: 87px;
+  padding-left: 3%;
   font-family: Contrail One;
   font-style: normal;
   font-weight: normal;
