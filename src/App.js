@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
+import ThemeContext from "./theme-context";
 
+import { Box } from "@material-ui/core";
 import Navbar from "./components/Navbar";
-
-import ThemeContext, { themes } from "./theme-context";
 
 function App() {
   const theme = useContext(ThemeContext);
 
   return (
-    <ThemeContext.Provider theme={themes.mainTheme}>
-      <div style={theme}>
+    <ThemeContext.Provider theme={theme}>
+      <Box style={theme}>
         <Navbar />
-      </div>
+      </Box>
     </ThemeContext.Provider>
   );
 }
