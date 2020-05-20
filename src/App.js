@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Navbar from "./components/Navbar";
 
 import ThemeContext, { themes } from "./theme-context";
 
 function App() {
+  const themeImport = useContext(ThemeContext);
+
   return (
     <ThemeContext.Provider value={themes.mainTheme}>
-      <Navbar />
+      <div style={themeImport}>
+        <Navbar />
+      </div>
     </ThemeContext.Provider>
   );
 }
