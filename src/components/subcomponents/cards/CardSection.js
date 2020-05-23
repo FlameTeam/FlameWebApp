@@ -6,21 +6,19 @@ function CardSection({ cards }) {
   const classes = useStyles();
 
   const NoData = (
-    <div className={classes.column}>
-      <div className={classes.card}>
-        <img src="img/team.png" alt="Avatar" className={classes.image} />
-        <div className={classes.container}>
-          <span className={classes.glowText}>
-            <span>Loading</span> <span>cool</span> <span>state</span>
-          </span>
-        </div>
+    <div className={classes.card}>
+      <img src="img/team.png" alt="Avatar" className={classes.image} />
+      <div className={classes.container}>
+        <span className={classes.glowText}>
+          <span>Loading</span> <span>cool</span> <span>state</span>
+        </span>
       </div>
     </div>
   );
 
   if (cards.length === 0) {
     return (
-      <div className={classes.row}>
+      <div className={classes.cards}>
         {NoData}
         {NoData}
         {NoData}
@@ -29,11 +27,9 @@ function CardSection({ cards }) {
   }
 
   return (
-    <div className={classes.row}>
+    <div className={classes.cards}>
       {cards.map(card => (
-        <div key={card.id} className={classes.column}>
-          <Card key={card.id} card={card}/>
-        </div>
+        <Card key={card.id} card={card}/>
       ))}
     </div>
   );

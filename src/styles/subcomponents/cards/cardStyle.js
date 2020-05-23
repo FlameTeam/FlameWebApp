@@ -3,22 +3,12 @@ import {
 } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-  /* Remove extra left and right margins, due to padding in columns */
-  row: {
-    margin: "0 -5px",
-    '&after':{
-        content: "",
-        display: "table",
-        clear: "both",
-    }
-  },
-
   card: {
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
-    padding: "20px",
+    padding: "1rem",
     textAlign: "center",
     width: "256px",
-    height: "303px",
+    height: "20rem",
     border: "1px solid #F45C43",
     boxSizing: "border-box",
     borderRadius: "80px",
@@ -27,19 +17,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  ['@media screen and (max-width: "600px")']: { // eslint-disable-line no-useless-computed-key
-    column: {
-      width: "100%",
-      display: "block",
-      marginBottom: "20px",
-    }
-  },
-
-  /* Create three equal columns that floats next to each other */
-  column: {
-    float: "left",
-    width: "30%",
-    padding: "10px",
+  cards: {
+    maxWidth: "1400px",
+    margin: " 0 auto",
+    display: "grid",
+    gridGap: "1rem",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))"
   },
 
   /* Circle and small image on card */

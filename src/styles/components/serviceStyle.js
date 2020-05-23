@@ -4,12 +4,13 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   titleWrapper: {
-    paddingLeft: "3%",
-    fontFamily: "Contrail One",
-    fontStyle: "normal",
+    maxWidth: "1680px",
+    margin: "0 auto",
+    display: "grid",
+    gridGap: "1rem",
+
     fontWeight: "normal",
     fontSize: "42px",
-    lineHeight: "53px",
     color: "#F45C43",
   },
 
