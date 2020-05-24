@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 
-function CardSection({ cards }) {
+function CardSection({ type, cards }) {
   const classes = useStyles();
 
   const NoData = (
@@ -26,13 +26,26 @@ function CardSection({ cards }) {
     )
   }
 
-  return (
-    <div className={classes.cards}>
-      {cards.map(card => (
-        <Card key={card.id} card={card}/>
-      ))}
-    </div>
-  );
+  if (type=="default"){
+    return (
+      <div className={classes.cards}>
+        {cards.map(card => (
+          <Card key={card.id} card={card} type={type}/>
+        ))}
+      </div>
+    );
+  }
+
+  if (type=="member"){
+    return (
+      <div className={classes.second_cards}>
+        {cards.map(card => (
+          <Card key={card.id} card={card} type={type}/>
+        ))}
+      </div>
+    );
+  }
+
 }
 
 export default CardSection;
