@@ -4,7 +4,7 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   titleWrapper: {
-    maxWidth: "1680px",
+    maxWidth: "1580px",
     margin: "0 auto",
     display: "grid",
     gridGap: "1rem",

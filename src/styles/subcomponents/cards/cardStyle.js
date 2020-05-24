@@ -4,12 +4,11 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     padding: "1rem",
     textAlign: "center",
     width: "256px",
     height: "20rem",
-    border: "1px solid #F45C43",
     boxSizing: "border-box",
     borderRadius: "80px",
     '&:hover': {
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   cards: {
-    maxWidth: "1400px",
+    maxWidth: "1680px",
     margin: " 0 auto",
     display: "grid",
     gridGap: "1rem",
