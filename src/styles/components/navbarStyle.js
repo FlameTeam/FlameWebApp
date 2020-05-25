@@ -4,8 +4,6 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     background: "#FFFFFF",
     height: "72px",
-
-    // border: "1px solid black",
   },
 
   navbarContainer: {
@@ -13,6 +11,32 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+  },
+
+  drawer: {
+    paddingTop: "1em",
+    height: "100%",
+    color: "white",
+    background: "linear-gradient(90deg, #F3705A 0%, #FFD15C 100%)",
+  },
+
+  listLinkResponsive: {
+    fontFamily: "Contrail One",
+    cursor: "pointer",
+    padding: "0.5em 2em",
+    marginBottom: "0.5em",
+
+    "&:hover": {
+      textDecoration: "underline",
+    },
+  },
+
+  menuButton: {
+    color: "#F3705A",
+    marginRight: theme.spacing(2),
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
   },
 }));
 

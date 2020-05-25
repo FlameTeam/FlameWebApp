@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "48px",
     paddingTop: "0.2em",
     cursor: "pointer",
+    textDecoration: "none",
+    fontWeight: "normal",
   },
 }));
 
