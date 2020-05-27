@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme) => ({
 
   logoText: {
     color: "#F3705A",
+    fontFamily: "Contrail One",
     fontSize: "48px",
-    paddingTop: "0.2em",
     cursor: "pointer",
     textDecoration: "none",
     fontWeight: "normal",
