@@ -16,13 +16,13 @@ export default function Menu() {
         <Link className={classes.listItemLink}>Servicios</Link>
       </li>
       <li>
-        <Link className={classes.listItemLink}>Proyectos</Link>
-      </li>
-      <li>
-        <Link className={classes.listItemLink}>Blog</Link>
-      </li>
-      <li>
         <Link className={classes.listItemLink}>Contacto</Link>
+      </li>
+      <li>
+        <Link className={classes.listItemLink}>Nuestro Equipo</Link>
+      </li>
+      <li>
+        <Link className={classes.listItemLink}>Saber Más</Link>
       </li>
     </ul>
   );
