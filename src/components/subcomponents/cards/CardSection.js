@@ -26,7 +26,7 @@ function CardSection({ type, cards }) {
     )
   }
 
-  if (type=="default"){
+  if (type==="default"){
     return (
       <div className={classes.cards}>
         {cards.map(card => (
@@ -36,7 +36,7 @@ function CardSection({ type, cards }) {
     );
   }
 
-  if (type=="member"){
+  if (type==="member"){
     return (
       <div className={classes.second_cards}>
         {cards.map(card => (

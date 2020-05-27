@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react';
 import CardSection from '../components/subcomponents/cards/CardSection';
 
 const subtitle="Ingeniero Civil en Computación"
-const github_icon="img/github_icon.png"
-const linkedin_icon="img/linkedin_icon.png"
+const github_icon="icon/github_icon.svg"
+const linkedin_icon="icon/linkedin_icon.svg"
 
 export const serviceSection = [
   { id:1, subtitle: 'Diseño y desarrollo de aplicaciones web', img:'img/team.png' },
