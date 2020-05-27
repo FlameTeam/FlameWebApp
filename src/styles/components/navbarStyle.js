@@ -3,13 +3,15 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   appbar: {
     background: "#FFFFFF",
-    padding: "0.1em"
+    paddingTop: "0.4em",
+    paddingBottom: "0.3em"
   },
 
   navbarContainer: {
     width: "100%",
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    height: "70px",
   },
 
   drawer: {

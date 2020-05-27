@@ -6,19 +6,32 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     alignItem: "center",
     
+    
+    [theme.breakpoints.up("sm")]: {
+      // paddingBottom: "20em",
+      border: "1px solid black",
+      height: "400px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "410px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "430px",
+    }
+    
    
   },
 
   imageGrid: {
-    
     margin: "0",
     display: "flex",
     justifyContent: "center",
+    // border: "1px solid white"
     
   },
 
-  image: {
-    
+  image: {    
+    // border: "1px solid black",
     [theme.breakpoints.up("xs")]: {
       height: "300px",
     },
@@ -26,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       height: "340px",
     },
     [theme.breakpoints.up("md")]: {
-      height: "375px",
+      height: "400px",
     }
   },
 
@@ -34,17 +47,30 @@ const useStyles = makeStyles((theme) => ({
       color: "#FFFFFF",
       fontWeight: "normal",
       fontSize: "2.5em",
-      marginTop: "0",
+      marginTop: "0.1em",
       textAlign: "center",
-
+      // border: "1px solid white"
+      
       [theme.breakpoints.up("xs")]: {
-        fontSize: "2.3em",
+        fontSize: "2.5em",
         paddingLeft: "1em",
-        paddingRight: "1em"
+        paddingRight: "1em",
       },
       [theme.breakpoints.up("sm")]: {
-        fontSize: "2.4em",
-      }
+        marginTop: "0.8em",
+        paddingLeft: "0",
+        paddingRight: "0",
+       
+        // border: "1px solid black"
+      },
+      [theme.breakpoints.up("md")]: {
+        fontSize: "2.7em",
+      },
+      [theme.breakpoints.up("lg")]: {
+        paddingLeft: "2.5em",
+        paddingRight: "2.5em",
+      },
+
   },
 
   gridBoxesContainer: {

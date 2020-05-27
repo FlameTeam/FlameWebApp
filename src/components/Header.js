@@ -2,7 +2,7 @@ import React from "react";
 
 import { Grid, Box } from "@material-ui/core";
 
-import GirlInDeskImage from "../images/girl-in-desk.svg";
+import GirlInDeskImage from "../images/girl-in-desk2.svg";
 
 import useStyles from "../styles/components/headerStyle";
 
