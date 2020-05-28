@@ -16,29 +16,29 @@ export default function Navbar() {
             </Grid>
 
             <Grid item xs={12} sm={8} md={7}>
+                
                 <Grid container alignItems="center">
-                <h2 className={classes.title}>¡Soluciones de Software hechas por un equipo!</h2>
-                <Grid container className={classes.gridBoxesContainer} >
-                   
-                    <Grid item xs={12} sm={5} className={classes.gridBox}>
-                        <Grid container justify="center"> 
-                            <h3 className={classes.titleBox}>¿Buscas una solución tecnológica para tu negocio?</h3>
-                            <Button className={classes.button}>Consultar Servicios</Button>
-                        </Grid>
-                    </Grid>
 
-                    <Grid item xs={12} sm={5} className={classes.gridBox}>
-                            <Grid container alignItems="center" justify="center"> 
+                    <h2 className={classes.title}>¡Soluciones de Software hechas por un equipo!</h2>
+
+                    <Grid container className={classes.gridBoxesContainer}>      
+
+                        <Grid item xs={12} sm={5} className={classes.gridBox}>
+                            <Grid container justify="center"> 
+                                <h3 className={classes.titleBox}>¿Buscas una solución tecnológica para tu negocio?</h3>
+                                <Button className={classes.button}>Consultar Servicios</Button>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12} sm={5} className={classes.gridBox}>
+                            <Grid container alignItems="center" justify="center">
                                 <h3 className={classes.titleBox}>¿Te gustaría conocer sobre las tecnologías que utilizamos?</h3>
                                 <Button className={classes.button}>Revisar Blog</Button>
                             </Grid>
+                        </Grid>
                     </Grid>
-               
                 </Grid>
-                </Grid>
-                
             </Grid>
         </Grid>
-    
   );
 }
