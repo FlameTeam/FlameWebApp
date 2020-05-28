@@ -1,6 +1,4 @@
-import {
-  makeStyles
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   titleWrapper: {
@@ -16,8 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
   serviceSection: {
     paddingLeft: "42px",
-  }
-
+  },
 }));
 
 export default useStyles;

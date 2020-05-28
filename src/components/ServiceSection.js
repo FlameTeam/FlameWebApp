@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import useStyles from "../styles/components/serviceStyle";
 
-import CardSection from './subcomponents/cards/CardSection';
-import { defaultCards } from '../stories/CardSection.stories';
+import CardSection from "./subcomponents/cards/CardSection";
+import { defaultCards } from "../stories/CardSection.stories";
 
 export function ServiceSection({ error }) {
   const classes = useStyles();

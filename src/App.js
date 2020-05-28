@@ -14,7 +14,7 @@ function App() {
       <Box style={theme}>
         <Navbar />
         <Header />
-        <Contact /> 
+        <Contact />
       </Box>
     </ThemeContext.Provider>
   );
