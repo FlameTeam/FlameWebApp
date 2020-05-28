@@ -7,9 +7,8 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
   },
 
-
   image: {
-    height: "70px"
+    height: "70px",
   },
 }));
 

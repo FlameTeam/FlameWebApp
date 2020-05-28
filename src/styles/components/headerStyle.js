@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    background: "linear-gradient(0deg, #D85656 0%, #F45C43 100%)",
+    background: "linear-gradient(0deg, #E15353 0%, #F45C43 100%)",
     flexGrow: "1",
     alignItem: "center",
   },

@@ -2,9 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   contact: {
-    background:
-      "linear-gradient(180.36deg, #EB3333 0.7%, #EB3433 0.71%, #F45C43 99.35%)",
-    height: "600px",
+    background: "linear-gradient(180.36deg, #E15353 0.71%, #F45C43 99.35%)",
+    paddingBottom: "1em",
   },
 
   title: {
@@ -17,70 +16,97 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
 
-  formGridContainer: {
-    marginLeft: "3em",
-    marginRight: "3em",
-    textAlign: "center",
-
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "1em",
-      marginRight: "1em",
-    },
-  },
-
   form: {
-    background: "#F14F3D",
-    width: "50%",
+    background: "#F3705A",
     margin: "auto",
     padding: "2em",
-    border: "1px solid #FA3535",
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "50px",
+
+    [theme.breakpoints.up("xs")]: {
+      width: "80%",
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: "70%",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "50%",
+    },
   },
 
   textFieldsBox: {
     display: "flex",
     flexDirection: "column",
+    alignItems: "center",
   },
 
-  emailPhoneTextFieldBox: {
-    display: "flex",
-    justifyContent: "space-between",
+  textFieldName: {
+    borderRadius: "100px",
+    background: "#F45C43",
+    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+    width: "100%",
+    marginBottom: "1em",
   },
 
-  formGridItem: {},
+  emailPhoneTextFieldGrid: {
+    margin: "auto",
+  },
 
-  textField: {
-    width: "35%",
-    margin: "1em",
-    [theme.breakpoints.down("sm")]: {
-      height: 30,
-      width: "70%",
-      fontSize: "0.7em",
+  textFieldEmailPhone: {
+    borderRadius: "100px",
+    background: "#F45C43",
+    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+    marginBottom: "1em",
+
+    [theme.breakpoints.up("xs")]: {
+      width: "100%",
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: "95%",
     },
   },
 
-  label: {
-    "&$focusedLabel": {
-      color: "#00EAA6",
-    },
-    color: "#00EAA6",
-    fontSize: "15px",
+  textFieldMessage: {
+    borderRadius: "60px",
+    background: "#F45C43",
+    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+    width: "100%",
+    marginBottom: "1em",
+  },
+
+  input: {
+    color: "white",
+    marginLeft: "1em",
+    marginRight: "1em",
+    fontFamily: "Contrail One",
   },
 
   underline: {
+    "&&&:before": {
+      borderBottom: "none",
+    },
+    "&&:after": {
+      borderBottom: "none",
+    },
+  },
+
+  button: {
+    background: "#F45C43",
     color: "#FFFFFF",
+    fontFamily: "Contrail One",
+    borderRadius: "60px",
+    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
 
-    "&:before": {
-      borderBottom: "1px solid white",
+    "&:hover": {
+      color: "#FFFFFF",
+      background: "transparent",
     },
 
-    "&&&&:hover:before": {
-      borderBottom: "1px solid white",
+    [theme.breakpoints.up("xs")]: {
+      width: "40%",
     },
-
-    "&:after": {
-      borderBottom: `1px solid cyan`,
+    [theme.breakpoints.up("sm")]: {
+      width: "30%",
     },
   },
 }));
