@@ -5,6 +5,7 @@ import { Box } from "@material-ui/core";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import ScreenSection from "./components/ScreenSection";
+import Contact from "./components/Contact";
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Header />
         <ScreenSection type="service" />
+        <Contact />
         <ScreenSection type="team" />
       </Box>
     </ThemeContext.Provider>
