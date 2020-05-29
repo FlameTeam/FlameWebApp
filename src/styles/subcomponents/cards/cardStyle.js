@@ -4,148 +4,224 @@ import {
 
 const useStyles = makeStyles((theme) => ({
 
-  /*  -------------------------------------------------------------------First Card------------------------------------------------------------------------*/
-  cards: {
-    maxWidth: "1680px",
-    margin: " 20px auto",
-    display: "grid",
-    gridGap: "1rem",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))"
+  personalImg: {
+    borderRadius: "100%",
+    marginTop:"2rem",
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+
+    [theme.breakpoints.up("xs")]: {
+      width: "120px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      marginLeft:"2rem",
+      width: "134px",
+    },
+    [theme.breakpoints.up("md")]: {
+      marginLeft:"2rem",
+      width: "140px",
+    }
   },
 
-  card: {
+  image: {
+    borderRadius: "100%",
+
+    [theme.breakpoints.up("xs")]: {
+      height: "150px",
+      width: "150px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      height: "160px",
+      width: "160px",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "180px",
+      width: "180px",
+    }
+  },
+
+  gridBoxesContainer: {
+    justifyContent: "center"
+  },
+
+  gridBox: {
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-    padding: "1rem",
-    textAlign: "center",
-    width: "256px",
-    height: "20rem",
-    boxSizing: "border-box",
     borderRadius: "80px",
     '&:hover': {
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
     },
+
+    [theme.breakpoints.up("xs")]: {
+      marginLeft: "4em",
+      marginRight: "4em",
+      marginBottom: "1em",
+      borderRadius: "50px",
+      minWidth: "252px",
+      height: "15rem"
+    },
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: "2em",
+      maxWidth: "280px",
+      marginLeft: "1em",
+      marginRight: "1em",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "18rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "20rem",
+      marginLeft:"5%",
+      marginRight:"5%"
+
+    },
   },
 
-  /* Add some padding inside the rectangle container */
-  container: {
-    padding: "0px 16px",
-    fontSize: "22px",
-    lineHeight: "28px",
-    display: "flex",
-    alignItems: "center",
-    textAlign: "center",
-    color: "#000000",
-  },
-
-  /*  -------------------------------------------------------------------Second Card------------------------------------------------------------------------*/
-  second_cards: {
-    maxWidth: "1680px",
-    margin: " 20px auto",
-    display: "grid",
-    gridGap: "1rem",
-    gridTemplateColumns: "repeat(auto-fit, minmax(472px, 1fr))"
-  },
-
-  second_card: {
-    boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.2)",
-    padding: "1rem",
-    textAlign: "center",
-    width: "472px",
-    height: "240px",
-    boxSizing: "border-box",
+  gridBoxLarge: {
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "55px",
     '&:hover': {
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
     },
+
+    [theme.breakpoints.up("xs")]: {
+      marginLeft: "4em",
+      marginRight: "4em",
+      marginBottom: "1em",
+      borderRadius: "50px",
+      height:"22rem",
+      minWidth: "255px",
+      maxWidth: "360px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: "2em",
+      maxWidth: "500px",
+      minWidth:"397px",
+      marginLeft: "1em",
+      marginRight: "1em",
+      height: "15rem",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "15rem",
+      minWidth: "475px",
+      marginLeft:"5%",
+      marginRight:"5%"
+
+    },
   },
 
-  row: {
-    display: "flex"
-  },
-
-  column: {
-    float: "left",
-  },
-
-  left: {
-    width: "40%",
-    margin:"5px 0",
-  },
-
-  right: {
-    width: "60%",
-  },
-
-  /* Add some padding inside the rectangle container */
-  second_container: {
-    padding: "23px 10px",
-    fontSize: "22px",
-    lineHeight: "28px",
-    alignItems: "center",
+  titleBox: {
+    color: "#101010",
+    fontWeight: "normal",
     textAlign: "center",
-    color: "#000000",
+
+    width: "80%",
+    margin: "auto",
+    marginTop: "1em",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "1.3em"
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.2em"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.3em"
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.5em"
+    },
   },
 
-  /*  ------------------------------------------------------------------Other Settings ------------------------------------------------------------------------*/
-
-  loadingItem: {
-    background: "white",
-    alignItems: "center",
-    borderTop: "1px solid #f0f9fb",
-  },
-
-  glowText: {
-    animation: "glow 1.5s ease-in-out infinite",
-    background: "#eee",
-    color: "transparent",
-    cursor: "progress",
-    display: "inline-block",
-  },
-
-  firstTitle:{
-    fontSize: "28px",
-    lineHeight: "35px",
+  firstTitle: {
     color: "#F45C43",
-    marginBottom: "10px",
+    fontWeight: "normal",
+    textAlign: "center",
+
+    width: "80%",
+    margin: "auto",
+    marginTop: "1em",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "1.3em"
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.4em"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.4em"
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.5em"
+    },
   },
 
-  secondTitle:{
-    fontSize: "18px",
+  secondTitle: {
     lineHeight: "23px",
     color: "#101010",
-    marginBottom: "10px",
+    fontWeight: "normal",
+    textAlign: "center",
+
+    width: "80%",
+    margin: "auto",
+    marginTop: "1em",
+    marginBottom: "1em",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "1.0em"
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.2em"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.2em"
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.3em"
+    },
   },
 
-  thirdTitle:{
-    fontSize: "16px",
+  thirdTitle: {
     lineHeight: "20px",
     color: "#101010",
-  },
+    fontWeight: "normal",
+    textAlign: "center",
 
-  /*  ------------------------------------------------------------------Imágenes ------------------------------------------------------------------------*/
+    width: "80%",
+    margin: "auto",
+    marginTop: "0.5em",
 
-  /* Circle and small image on card */
-  personal_image: {
-    width: "163px",
-    height: "163px",
-    borderRadius: "100px",
-  },
-
-  /* Circle and small image on card */
-  image: {
-    width: "160px",
-    height: "160px",
-    borderRadius: "100px",
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "0.9em"
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "1.0em"
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1.0em"
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.1em"
+    },
   },
 
   icon_img: {
-    width: "30px",
-    height: "30px",
-    marginTop:"10px",
+    marginTop:"1rem",
     paddingRight: "5px",
+
+    [theme.breakpoints.up("xs")]: {
+      width: "20px"
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: "25px"
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "25px"
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: "30px"
+    },
   },
-
-
 
 }));
 

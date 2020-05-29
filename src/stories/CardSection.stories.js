@@ -8,9 +8,9 @@ const github_icon="icon/github_icon.svg"
 const linkedin_icon="icon/linkedin_icon.svg"
 
 export const serviceSection = [
-  { id:1, subtitle: 'Diseño y desarrollo de aplicaciones web', img:'img/team.png' },
-  { id:2, subtitle: 'Diseño y desarrollo de aplicaciones móviles', img:'img/team.png' },
-  { id:3, subtitle: 'Difusión de contenido tecnológico', img:'img/team.png' },
+  { id:1, subtitle: 'Diseño y desarrollo de aplicaciones web', img:'icon/web_app.svg' },
+  { id:2, subtitle: 'Diseño y desarrollo de aplicaciones móviles', img:'icon/movil_app.svg' },
+  { id:3, subtitle: 'Difusión de contenido tecnológico', img:'icon/difusion.svg' },
 ];
 
 export const teamSection = [

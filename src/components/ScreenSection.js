@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import useStyles from "../styles/components/serviceStyle";
+import { Grid } from "@material-ui/core";
 
 import CardSection from './subcomponents/cards/CardSection';
 import { serviceSection } from '../stories/CardSection.stories'; //json with data
@@ -8,6 +9,18 @@ import { teamSection } from '../stories/CardSection.stories'; //json with data
 
 export function ScreenSection({ error, type }) {
   const classes = useStyles();
+  let cardType,title, cards="";
+
+  if (type==="service"){
+    title="Nuestros servicios";
+    cardType="default";
+    cards=serviceSection;
+  }
+  if (type==="team"){
+    title="Nuestro equipo";
+    cardType="member";
+    cards=teamSection;
+  }
 
   if (error) {
     return (
@@ -21,32 +34,15 @@ export function ScreenSection({ error, type }) {
     );
   }
 
-  if (type==="service") {
-    return (
-      <section id="servicios" className={classes.serviceSection}>
-        <nav>
-          <h1>
-            <span className={classes.titleWrapper}>Nuestros Servicios</span>
-          </h1>
-        </nav>
-        <CardSection type="default" cards={serviceSection} />
-      </section>
-    );
-  }
+  return (
+    <Grid container className={classes.header}>
+        <Grid item style={{width:"100%"}}>
+              <h2 className={classes.title}>{title}</h2>
+              <CardSection type={cardType} cards={cards} />
 
-  if (type==="team") {
-    return (
-      <section id="equipo" className={classes.serviceSection}>
-        <nav>
-          <h1>
-            <span className={classes.titleWrapper}>Nuestro Equipo</span>
-          </h1>
-        </nav>
-        <CardSection type="member" cards={teamSection} />
-      </section>
-    );
-  }
-
+        </Grid>
+    </Grid>
+  );
 
 }
 
