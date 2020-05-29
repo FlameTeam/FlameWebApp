@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
+import { Grid } from "@material-ui/core";
 
-function CardSection({ cards }) {
+function CardSection({ type, cards }) {
   const classes = useStyles();
 
   const NoData = (
@@ -27,12 +28,13 @@ function CardSection({ cards }) {
   }
 
   return (
-    <div className={classes.cards}>
-      {cards.map((card) => (
-        <Card key={card.id} card={card} />
+    <Grid container className={classes.gridBoxesContainer} >
+      {cards.map(card => (
+        <Card key={card.id} card={card} type={type}/>
       ))}
-    </div>
+    </Grid>
   );
+
 }
 
 export default CardSection;

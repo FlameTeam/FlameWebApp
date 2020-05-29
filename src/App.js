@@ -4,7 +4,7 @@ import ThemeContext from "./theme-context";
 import { Box } from "@material-ui/core";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import Contact from "./components/Contact";
+import ScreenSection from "./components/ScreenSection";
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -14,7 +14,8 @@ function App() {
       <Box style={theme}>
         <Navbar />
         <Header />
-        <Contact />
+        <ScreenSection type="service" />
+        <ScreenSection type="team" />
       </Box>
     </ThemeContext.Provider>
   );
