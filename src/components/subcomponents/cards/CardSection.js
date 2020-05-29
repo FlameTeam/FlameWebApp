@@ -1,5 +1,5 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 
 function CardSection({ cards }) {
@@ -23,13 +23,13 @@ function CardSection({ cards }) {
         {NoData}
         {NoData}
       </div>
-    )
+    );
   }
 
   return (
     <div className={classes.cards}>
-      {cards.map(card => (
-        <Card key={card.id} card={card}/>
+      {cards.map((card) => (
+        <Card key={card.id} card={card} />
       ))}
     </div>
   );
