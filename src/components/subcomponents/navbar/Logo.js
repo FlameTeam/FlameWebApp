@@ -9,7 +9,7 @@ export default function Logo() {
 
   return (
     <div className={classes.logoBox}>
-      <img alt="flame" src={flameLogo} className={classes.image}/>
+      <img alt="flame" src={flameLogo} className={classes.image} />
     </div>
   );
 }

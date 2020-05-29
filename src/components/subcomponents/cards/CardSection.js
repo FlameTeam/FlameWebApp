@@ -1,5 +1,5 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 import { Grid } from "@material-ui/core";
 
@@ -24,7 +24,7 @@ function CardSection({ type, cards }) {
         {NoData}
         {NoData}
       </div>
-    )
+    );
   }
 
   return (

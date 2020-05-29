@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 import { Grid } from "@material-ui/core";
 
@@ -48,5 +48,5 @@ Card.propTypes = {
   card: PropTypes.shape({
     subtitle: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
-  })
+  }),
 };

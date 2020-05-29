@@ -1,6 +1,4 @@
-import {
-  makeStyles
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -31,21 +29,6 @@ const useStyles = makeStyles((theme) => ({
         paddingRight: "2.5em",
       },
   },
-
-  // titleWrapper: {
-  //   maxWidth: "1580px",
-  //   margin: "0 auto",
-  //   display: "grid",
-  //   gridGap: "1rem",
-  //
-  //   fontWeight: "normal",
-  //   fontSize: "42px",
-  //   color: "#F45C43",
-  // },
-  //
-  // serviceSection: {
-  //   paddingLeft: "42px",
-  // }
 
 }));
 
