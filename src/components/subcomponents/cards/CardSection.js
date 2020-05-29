@@ -3,7 +3,6 @@ import Card from './Card';
 import useStyles from "../../../styles/subcomponents/cards/cardStyle";
 import { Grid } from "@material-ui/core";
 
-
 function CardSection({ type, cards }) {
   const classes = useStyles();
 
