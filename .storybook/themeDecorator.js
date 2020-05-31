@@ -1,5 +1,6 @@
 import React from "react";
 import ContrailOne from 'typeface-contrail-one';
+import { Box } from "@material-ui/core";
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 import { ThemeProvider, createMuiTheme } from '@material-ui/core';

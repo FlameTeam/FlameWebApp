@@ -4,6 +4,8 @@ import {
 
 const useStyles = makeStyles((theme) => ({
 
+    // ____________________________________ Images __________________________________
+
   personalImg: {
     borderRadius: "100%",
     marginTop:"2rem",
@@ -16,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("sm")]: {
       marginLeft:"2rem",
-      width: "134px",
+      width: "130px",
     },
     [theme.breakpoints.up("md")]: {
       marginLeft:"2rem",
@@ -28,18 +30,36 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "100%",
 
     [theme.breakpoints.up("xs")]: {
-      height: "150px",
       width: "150px",
     },
     [theme.breakpoints.up("sm")]: {
-      height: "160px",
       width: "160px",
     },
     [theme.breakpoints.up("md")]: {
-      height: "180px",
       width: "180px",
     }
   },
+
+  icon_img: {
+    marginTop:"1rem",
+    paddingRight: "5px",
+
+    [theme.breakpoints.up("xs")]: {
+      width: "20px"
+    },
+    [theme.breakpoints.up("sm")]: {
+      width: "25px"
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "25px"
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: "30px"
+    },
+  },
+
+  // ____________________________________ Boxes __________________________________
+
 
   gridBoxesContainer: {
     justifyContent: "center"
@@ -109,6 +129,9 @@ const useStyles = makeStyles((theme) => ({
 
     },
   },
+
+  // ____________________________________ Titles __________________________________
+
 
   titleBox: {
     color: "#101010",
@@ -202,24 +225,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.1em"
-    },
-  },
-
-  icon_img: {
-    marginTop:"1rem",
-    paddingRight: "5px",
-
-    [theme.breakpoints.up("xs")]: {
-      width: "20px"
-    },
-    [theme.breakpoints.up("sm")]: {
-      width: "25px"
-    },
-    [theme.breakpoints.up("md")]: {
-      width: "25px"
-    },
-    [theme.breakpoints.up("lg")]: {
-      width: "30px"
     },
   },
 

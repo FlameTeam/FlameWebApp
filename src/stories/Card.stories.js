@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { object } from '@storybook/addon-knobs';
 
 import Card from '../components/subcomponents/cards/Card';
 
@@ -26,5 +27,5 @@ export const memberCard = {
 };
 
 storiesOf('Card', module)
-.add('default', () => <Card type="default" card={defaultCard} />)
-.add('member', () => <Card type="member" card={memberCard} />)
+.add('default', () => <Card type="default" card={object("default Card",defaultCard)} />)
+.add('member', () => <Card type="member" card={object("member Card",memberCard)} />)

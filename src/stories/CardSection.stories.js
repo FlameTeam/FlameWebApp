@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { object } from '@storybook/addon-knobs';
 
 import CardSection from '../components/subcomponents/cards/CardSection';
 
@@ -48,6 +49,6 @@ export const teamSection = [
 
 storiesOf('CardSection', module)
   .addDecorator(story => <div style={{ padding: '3rem' }}>{story()}</div>)
-  .add('services', () => <CardSection type="default" cards={serviceSection} />)
-  .add('team', () => <CardSection type="member" cards={teamSection} />)
+  .add('services', () => <CardSection type="default" cards={object("service Section",serviceSection)} />)
+  .add('team', () => <CardSection type="member" cards={object("team Section",teamSection)} />)
   .add('loading', () => <CardSection loading cards={[]} />)
