@@ -113,14 +113,20 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("sm")]: {
       marginBottom: "2em",
-      maxWidth: "500px",
+      maxWidth: "480px",
       minWidth: "360px",
       marginLeft: "1em",
       marginRight: "1em",
       height: "13rem",
     },
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       height: "14rem",
+      minWidth: "360px",
+      marginLeft: "5%",
+      marginRight: "5%"
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "15rem",
       minWidth: "475px",
       marginLeft: "5%",
       marginRight: "5%"
