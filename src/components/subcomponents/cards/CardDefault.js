@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useStyles from "../../../styles/subcomponents/cards/cardStyle";
+import useStyles from "../../../styles/subcomponents/cardStyle";
 import { Grid } from "@material-ui/core";
 
 export default function CardDefault({ card }) {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} sm={5} className={classes.gridBox}>
+    <Grid item xs={12} sm={3} className={classes.gridBox}>
       <Grid container justify="center">
         <img src={card.img} alt="Avatar" className={classes.image} />
         <h3 className={classes.titleBox}>{card.subtitle}</h3>
