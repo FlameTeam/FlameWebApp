@@ -3,17 +3,23 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   contact: {
     background: "linear-gradient(180.36deg, #E15353 0.71%, #F45C43 99.35%)",
-    paddingBottom: "1em",
+
+    [theme.breakpoints.up("xs")]: {
+      paddingBottom: "2.2em",
+    },
   },
 
   title: {
-    marginTop: "0",
-    marginBottom: "0.2em",
-    paddingTop: "1em",
-    paddingLeft: "1em",
-    fontSize: "2.7em",
     fontWeight: "normal",
     color: "#FFFFFF",
+
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "0.8em",
+      paddingLeft: "0.6em",
+      fontSize: "2.1em",
+    },
+    [theme.breakpoints.up("sm")]: {},
+    [theme.breakpoints.up("md")]: {},
   },
 
   form: {
@@ -24,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {
-      width: "80%",
+      width: "70%",
     },
     [theme.breakpoints.up("sm")]: {
       width: "70%",
@@ -103,7 +109,8 @@ const useStyles = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("xs")]: {
-      width: "40%",
+      width: "50%",
+      fontSize: "1.1em",
     },
     [theme.breakpoints.up("sm")]: {
       width: "30%",

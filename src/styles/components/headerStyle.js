@@ -5,6 +5,10 @@ const useStyles = makeStyles((theme) => ({
     background: "linear-gradient(0deg, #E15353 0%, #F45C43 100%)",
     flexGrow: "1",
     alignItem: "center",
+
+    [theme.breakpoints.up("xs")]: {
+      paddingBottom: "1.5em",
+    },
   },
 
   imageGrid: {
@@ -60,9 +64,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {
-      marginLeft: "4em",
-      marginRight: "4em",
+      marginLeft: "3em",
+      marginRight: "3em",
       marginBottom: "1em",
+      width: "100%",
+      maxWidth: "305px",
     },
     [theme.breakpoints.up("sm")]: {
       marginBottom: "2em",

@@ -1,9 +1,6 @@
-import {
-  makeStyles
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-
   // ____________________________________ Images __________________________________
 
   personalImg: {
@@ -31,13 +28,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-
   image: {
     borderRadius: "100%",
 
     [theme.breakpoints.up("xs")]: {
       width: "130px",
-      marginTop:"1rem"
+      marginTop: "1rem",
     },
     [theme.breakpoints.up("sm")]: {
       width: "120px",
@@ -47,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       width: "200px",
-    }
+    },
   },
 
   icon_img: {
@@ -56,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       width: "20px",
       marginTop: "0.5rem",
-      marginBottom:"1rem"
+      marginBottom: "1rem",
     },
     [theme.breakpoints.up("sm")]: {
       width: "22px",
@@ -85,10 +81,41 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: "50px",
       minWidth: "168px",
       maxWidth: "390px",
-      height: "14rem"
+      height: "14rem",
     },
     [theme.breakpoints.up("sm")]: {
       marginBottom: "1em",
+      maxWidth: "350px",
+      minWidth: "180px",
+      marginLeft: "0.5em",
+      marginRight: "0.5em",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "18rem",
+      marginLeft: "2em",
+      marginRight: "2em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "20rem",
+      marginLeft: "2em",
+      marginRight: "2em",
+    },
+  },
+
+  gridLastBox: {
+    boxShadow: "1px 4px 4px rgba(0, 0, 0, 0.25)",
+    borderRadius: "80px",
+
+    [theme.breakpoints.up("xs")]: {
+      marginLeft: "2em",
+      marginRight: "2em",
+      marginBottom: "0",
+      borderRadius: "50px",
+      minWidth: "168px",
+      maxWidth: "390px",
+      height: "14rem",
+    },
+    [theme.breakpoints.up("sm")]: {
       maxWidth: "350px",
       minWidth: "180px",
       marginLeft: "0.5em",
@@ -128,19 +155,49 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       minWidth: "384px",
       marginLeft: "5%",
-      marginRight: "5%"
+      marginRight: "5%",
     },
     [theme.breakpoints.up("lg")]: {
       height: "15rem",
       minWidth: "475px",
       marginLeft: "5%",
-      marginRight: "5%"
+      marginRight: "5%",
+    },
+  },
 
+  gridLastBoxLarge: {
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    borderRadius: "55px",
+
+    [theme.breakpoints.up("xs")]: {
+      marginLeft: "2em",
+      marginRight: "2em",
+      marginBottom: "2.2em",
+      borderRadius: "50px",
+      minWidth: "250px",
+      maxWidth: "400px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: "1.2em",
+      marginRight: "1.2em",
+      borderRadius: "50px",
+      minWidth: "170px",
+      maxWidth: "300px",
+    },
+    [theme.breakpoints.up("md")]: {
+      minWidth: "384px",
+      marginLeft: "5%",
+      marginRight: "5%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "15rem",
+      minWidth: "475px",
+      marginLeft: "5%",
+      marginRight: "5%",
     },
   },
 
   // ____________________________________ Titles __________________________________
-
 
   titleBox: {
     color: "#101010",
@@ -152,16 +209,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "1em",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1em"
+      fontSize: "1.2em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1em"
+      fontSize: "1em",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.3em"
+      fontSize: "1.3em",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.5em"
+      fontSize: "1.5em",
     },
   },
 
@@ -199,16 +256,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "0.8em",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1.0em"
+      fontSize: "1.0em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1em"
+      fontSize: "1em",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "1.2em",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.3em"
+      fontSize: "1.3em",
     },
   },
 
@@ -223,17 +280,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "0.2em",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "0.9em"
+      fontSize: "0.9em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "0.8em"
+      fontSize: "0.8em",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "1.0em",
-      marginLeft:"1.9em"
+      marginLeft: "1.9em",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.1em"
+      fontSize: "1.1em",
     },
   },
 }));

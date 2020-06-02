@@ -1,9 +1,6 @@
-import {
-  makeStyles
-} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
-
   // ____________________________________ Boxes __________________________________
 
   gridBox: {
@@ -21,7 +18,27 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1em",
       marginRight: "1em",
       marginTop: "1px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "5%",
+      marginRight: "5%",
+      marginTop: "12px",
+    },
+  },
 
+  gridLastBox: {
+    height: "auto",
+
+    [theme.breakpoints.up("xs")]: {
+      marginLeft: "4em",
+      marginRight: "4em",
+      minWidth: "100px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "280px",
+      marginLeft: "1em",
+      marginRight: "1em",
+      marginTop: "1px",
     },
     [theme.breakpoints.up("lg")]: {
       marginLeft: "5%",
@@ -39,20 +56,20 @@ const useStyles = makeStyles((theme) => ({
 
     width: "80%",
     margin: "auto",
-    marginTop: "1em",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "17px"
+      fontSize: "1.3em",
+      marginBottom: "-0.5em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "18px"
+      fontSize: "18px",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "21px"
+      fontSize: "21px",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "22px",
-      lineHeight: "28px"
+      lineHeight: "28px",
     },
   },
 
@@ -66,20 +83,20 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
 
     [theme.breakpoints.up("xs")]: {
-      marginBottom: "0.8rem",
-      fontSize: "0.8rem"
+      fontSize: "1em",
+      marginBottom: "0.5em",
     },
     [theme.breakpoints.up("sm")]: {
       marginBottom: "0.8rem",
-      fontSize: "0.8rem"
+      fontSize: "0.8rem",
     },
     [theme.breakpoints.up("md")]: {
       marginBottom: "0.8rem",
-      fontSize: "0.9rem"
+      fontSize: "0.9rem",
     },
     [theme.breakpoints.up("lg")]: {
       marginBottom: "1rem",
-      fontSize: "1rem"
+      fontSize: "1rem",
     },
   },
 
@@ -88,10 +105,14 @@ const useStyles = makeStyles((theme) => ({
   line: {
     border: "1px solid #FFFFFF",
     background: "#FFFFFF",
-    marginLeft: "10%",
-    marginBottom: "0.5rem"
-  }
 
+    [theme.breakpoints.up("xs")]: {
+      marginBottom: "1.2em",
+    },
+    [theme.breakpoints.up("sm")]: {},
+    [theme.breakpoints.up("md")]: {},
+    [theme.breakpoints.up("lg")]: {},
+  },
 }));
 
 export default useStyles;
