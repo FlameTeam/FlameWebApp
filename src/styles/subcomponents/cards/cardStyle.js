@@ -21,10 +21,15 @@ const useStyles = makeStyles((theme) => ({
       width: "120px",
     },
     [theme.breakpoints.up("md")]: {
-      marginLeft: "2rem",
+      marginLeft: "1.5rem",
+      width: "137px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: "2.5rem",
       width: "140px",
-    }
+    },
   },
+
 
   image: {
     borderRadius: "100%",
@@ -113,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("sm")]: {
       marginBottom: "2em",
-      maxWidth: "480px",
+      maxWidth: "380px",
       minWidth: "360px",
       marginLeft: "1em",
       marginRight: "1em",
