@@ -63,10 +63,10 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "-0.5em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1.3",
+      fontSize: "1.3em",
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "21px",
+      fontSize: "1.5em",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "22px",
@@ -92,8 +92,8 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "0.5em",
     },
     [theme.breakpoints.up("md")]: {
-      marginBottom: "0.8rem",
-      fontSize: "0.9rem",
+      fontSize: "1em",
+      marginBottom: "0.6em",
     },
     [theme.breakpoints.up("lg")]: {
       marginBottom: "1rem",

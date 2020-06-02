@@ -50,7 +50,10 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: "2em",
       paddingBottom: "2em",
     },
-    [theme.breakpoints.up("md")]: {},
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "3em",
+      paddingBottom: "3em",
+    },
     [theme.breakpoints.up("lg")]: {},
   },
 }));

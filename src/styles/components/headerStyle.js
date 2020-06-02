@@ -7,11 +7,15 @@ const useStyles = makeStyles((theme) => ({
     alignItem: "center",
 
     [theme.breakpoints.up("xs")]: {
-      paddingBottom: "1.5em",
+      paddingBottom: "1em",
     },
     [theme.breakpoints.up("sm")]: {
       paddingTop: "1.5em",
       paddingBottom: "1.5em",
+    },
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "2em",
+      paddingBottom: "3em",
     },
   },
 
@@ -66,18 +70,24 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {
-      maxWidth: "300px",
-      marginBottom: "1em",
+      paddingTop: "1em",
+      paddingBottom: "1em",
+      maxWidth: "270px",
+      marginBottom: "2em",
       width: "100%",
     },
     [theme.breakpoints.up("sm")]: {
+      paddingTop: "1em",
+      paddingBottom: "1em",
       maxWidth: "230px",
       marginBottom: "2em",
       marginLeft: "1em",
       marginRight: "1em",
     },
     [theme.breakpoints.up("md")]: {
-      height: "185px",
+      paddingTop: "2em",
+      paddingBottom: "2em",
+      maxWidth: "300px",
     },
     [theme.breakpoints.up("lg")]: {
       height: "200px",
@@ -91,7 +101,6 @@ const useStyles = makeStyles((theme) => ({
 
     width: "80%",
     margin: "auto",
-    marginTop: "1em",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "1.3em",
@@ -116,7 +125,6 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "capitalize",
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "100px",
-    marginBottom: "1em",
 
     [theme.breakpoints.up("xs")]: {
       paddingLeft: "1.4em",

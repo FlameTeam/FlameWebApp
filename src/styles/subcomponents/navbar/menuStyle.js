@@ -14,8 +14,15 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px 20px 20px 20px",
     listStyleType: "none",
 
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.up("xs")]: {
       display: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      display: "none",
+    },
+    [theme.breakpoints.up("md")]: {
+      display: "flex",
+      width: "50%",
     },
   },
 

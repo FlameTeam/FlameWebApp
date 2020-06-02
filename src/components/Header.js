@@ -34,7 +34,7 @@ export default function Navbar() {
               sm={5}
               className={classes.gridBox}
             >
-              <Grid container justify="center" alignItems="center">
+              <Grid container justify="center">
                 <h3 className={classes.titleBox}>
                   ¿Buscas una solución tecnológica para tu negocio?
                 </h3>
@@ -42,8 +42,15 @@ export default function Navbar() {
               </Grid>
             </Grid>
 
-            <Grid item xs={12} sm={5} className={classes.gridBox}>
-              <Grid container alignItems="center" justify="center">
+            <Grid
+              item
+              xs={12}
+              sm={5}
+              className={classes.gridBox}
+              container
+              alignItems="center"
+            >
+              <Grid container justify="center">
                 <h3 className={classes.titleBox}>
                   ¿Te gustaría conocer sobre las tecnologías que utilizamos?
                 </h3>

@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       paddingBottom: "3.2em",
     },
+    [theme.breakpoints.up("md")]: {
+      paddingBottom: "4em",
+    },
   },
 
   title: {
@@ -26,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "0.6em",
       fontSize: "2.5em",
     },
-    [theme.breakpoints.up("md")]: {},
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "1.1em",
+      paddingLeft: "0.6em",
+      fontSize: "2.7em",
+    },
   },
 
   form: {
