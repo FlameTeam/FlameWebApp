@@ -8,25 +8,26 @@ const useStyles = makeStyles((theme) => ({
 
   personalImg: {
     borderRadius: "100%",
-    marginTop: "2rem",
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
 
     [theme.breakpoints.up("xs")]: {
-      width: "120px",
+      marginTop: "1rem",
+      width: "140px",
     },
     [theme.breakpoints.up("sm")]: {
-      marginLeft: "2rem",
       width: "120px",
     },
     [theme.breakpoints.up("md")]: {
-      marginLeft: "1.5rem",
-      width: "137px",
+      marginTop: "2rem",
+      marginLeft: "1rem",
+      width: "150px",
     },
     [theme.breakpoints.up("lg")]: {
-      marginLeft: "2.5rem",
-      width: "140px",
+      marginTop: "1rem",
+      marginLeft: "2rem",
+      width: "180px",
     },
   },
 
@@ -35,13 +36,17 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "100%",
 
     [theme.breakpoints.up("xs")]: {
-      width: "150px",
+      width: "130px",
+      marginTop:"1rem"
     },
     [theme.breakpoints.up("sm")]: {
-      width: "160px",
+      width: "120px",
     },
     [theme.breakpoints.up("md")]: {
-      width: "180px",
+      width: "160px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      width: "200px",
     }
   },
 
@@ -51,13 +56,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       width: "20px",
       marginTop: "0.5rem",
+      marginBottom:"1rem"
     },
     [theme.breakpoints.up("sm")]: {
-      width: "20px",
+      width: "22px",
       marginTop: "0.5rem",
     },
     [theme.breakpoints.up("md")]: {
-      width: "23px",
+      width: "20px",
       marginTop: "0.9rem",
     },
     [theme.breakpoints.up("lg")]: {
@@ -69,64 +75,58 @@ const useStyles = makeStyles((theme) => ({
   // ____________________________________ Boxes __________________________________
 
   gridBox: {
-    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    boxShadow: "1px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "80px",
-    '&:hover': {
-      boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
-    },
 
     [theme.breakpoints.up("xs")]: {
-      marginLeft: "4em",
-      marginRight: "4em",
-      marginBottom: "1em",
+      marginLeft: "2em",
+      marginRight: "2em",
+      marginBottom: "4em",
       borderRadius: "50px",
-      minWidth: "252px",
+      minWidth: "168px",
+      maxWidth: "390px",
       height: "14rem"
     },
     [theme.breakpoints.up("sm")]: {
-      marginBottom: "2em",
-      maxWidth: "280px",
-      marginLeft: "1em",
-      marginRight: "1em",
+      marginBottom: "1em",
+      maxWidth: "350px",
+      minWidth: "180px",
+      marginLeft: "0.5em",
+      marginRight: "0.5em",
     },
     [theme.breakpoints.up("md")]: {
       height: "18rem",
+      marginLeft: "2em",
+      marginRight: "2em",
     },
     [theme.breakpoints.up("lg")]: {
       height: "20rem",
-      marginLeft: "5%",
-      marginRight: "5%"
-
+      marginLeft: "2em",
+      marginRight: "2em",
     },
   },
 
   gridBoxLarge: {
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "55px",
-    '&:hover': {
-      boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
-    },
 
     [theme.breakpoints.up("xs")]: {
-      marginLeft: "4em",
-      marginRight: "4em",
-      marginBottom: "1em",
+      marginLeft: "2em",
+      marginRight: "2em",
+      marginBottom: "4em",
       borderRadius: "50px",
-      height: "21.5rem",
-      minWidth: "255px",
-      maxWidth: "360px",
+      minWidth: "250px",
+      maxWidth: "400px",
     },
     [theme.breakpoints.up("sm")]: {
-      marginBottom: "2em",
-      maxWidth: "380px",
-      minWidth: "360px",
-      marginLeft: "1em",
-      marginRight: "1em",
-      height: "13rem",
+      marginLeft: "1.2em",
+      marginRight: "1.2em",
+      borderRadius: "50px",
+      minWidth: "170px",
+      maxWidth: "300px",
     },
     [theme.breakpoints.up("md")]: {
-      height: "14rem",
-      minWidth: "360px",
+      minWidth: "384px",
       marginLeft: "5%",
       marginRight: "5%"
     },
@@ -155,7 +155,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1em"
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1.1em"
+      fontSize: "1em"
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "1.3em"
@@ -170,24 +170,21 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "normal",
     textAlign: "center",
 
+    marginTop: "1em",
     width: "80%",
     margin: "auto",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "1.3em",
-      marginTop: "1.3em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1.3em",
-      marginTop: "1.3em",
+      fontSize: "1.2em",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "1.4em",
-      marginTop: "1.2em"
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.5em",
-      marginTop: "1.2em"
     },
   },
 
@@ -200,16 +197,15 @@ const useStyles = makeStyles((theme) => ({
     width: "80%",
     margin: "auto",
     marginTop: "0.8em",
-    marginBottom: "0.6em",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "1.0em"
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1.05em"
+      fontSize: "1em"
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.2em"
+      fontSize: "1.2em",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.3em"
@@ -230,10 +226,11 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "0.9em"
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "0.9em"
+      fontSize: "0.8em"
     },
     [theme.breakpoints.up("md")]: {
-      fontSize: "1.0em"
+      fontSize: "1.0em",
+      marginLeft:"1.9em"
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.1em"

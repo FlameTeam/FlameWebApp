@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useStyles from "../../../styles/subcomponents/columns/columnStyle";
+import useStyles from "../../../styles/subcomponents/columnStyle";
 import { Grid, Link } from "@material-ui/core";
 
 
@@ -9,7 +9,7 @@ export default function Column({ type, info }) {
   const subtitles=info.subtitles;
 
   return (
-      <Grid item xs={10} sm={5} className={classes.gridBox}>
+      <Grid item xs={10} sm={3} className={classes.gridBox}>
           <Grid container>
               <h3 className={classes.titleBox}>{info.title}</h3>
           </Grid>

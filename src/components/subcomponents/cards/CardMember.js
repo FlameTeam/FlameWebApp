@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useStyles from "../../../styles/subcomponents/cards/cardStyle";
+import useStyles from "../../../styles/subcomponents/cardStyle";
 import { Grid } from "@material-ui/core";
 
 export default function CardMember({ card }) {
@@ -11,11 +11,11 @@ export default function CardMember({ card }) {
   return (
     <Grid item xs={12} sm={5} className={classes.gridBoxLarge}>
         <Grid container justify="center">
-          <Grid item xs={12} sm={4} md={4}>
+          <Grid item xs={12} sm={12} md={4}>
             <img src={card.img} alt="Avatar" className={classes.personalImg} />
           </Grid>
 
-          <Grid item xs={12} sm={8} md={8}>
+          <Grid item xs={12} sm={12} md={8}>
             <h2 className={classes.firstTitle}> {card.title} </h2>
             <h3 className={classes.secondTitle}>{card.subtitle}</h3>
             {
