@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
       minWidth: "100px",
     },
     [theme.breakpoints.up("sm")]: {
-      marginBottom: "2em",
       maxWidth: "280px",
       marginLeft: "1em",
       marginRight: "1em",
       marginTop: "1px",
+      marginBottom: "0",
     },
     [theme.breakpoints.up("lg")]: {
       marginLeft: "5%",
@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "1em",
       marginRight: "1em",
       marginTop: "1px",
+      marginBottom: "0",
     },
     [theme.breakpoints.up("lg")]: {
       marginLeft: "5%",
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "-0.5em",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "18px",
+      fontSize: "1.3",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "21px",
@@ -83,12 +84,12 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
 
     [theme.breakpoints.up("xs")]: {
-      fontSize: "1em",
+      fontSize: "0.9em",
       marginBottom: "0.5em",
     },
     [theme.breakpoints.up("sm")]: {
-      marginBottom: "0.8rem",
-      fontSize: "0.8rem",
+      fontSize: "0.9em",
+      marginBottom: "0.5em",
     },
     [theme.breakpoints.up("md")]: {
       marginBottom: "0.8rem",

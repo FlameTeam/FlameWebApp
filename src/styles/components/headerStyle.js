@@ -9,6 +9,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       paddingBottom: "1.5em",
     },
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: "1.5em",
+      paddingBottom: "1.5em",
+    },
   },
 
   imageGrid: {
@@ -33,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: "#FFFFFF",
     fontWeight: "normal",
-    marginTop: "0.1em",
     textAlign: "center",
 
     [theme.breakpoints.up("xs")]: {
@@ -42,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: "1em",
     },
     [theme.breakpoints.up("sm")]: {
-      marginTop: "0.8em",
       fontSize: "2.5em",
     },
     [theme.breakpoints.up("md")]: {
@@ -64,15 +66,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {
-      marginLeft: "3em",
-      marginRight: "3em",
+      maxWidth: "300px",
       marginBottom: "1em",
       width: "100%",
-      maxWidth: "305px",
     },
     [theme.breakpoints.up("sm")]: {
+      maxWidth: "230px",
       marginBottom: "2em",
-      maxWidth: "290px",
       marginLeft: "1em",
       marginRight: "1em",
     },
@@ -124,8 +124,8 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1em",
     },
     [theme.breakpoints.up("sm")]: {
-      paddingLeft: "0.8em",
-      paddingRight: "0.8em",
+      paddingLeft: "0.7em",
+      paddingRight: "0.7em",
       fontSize: "1em",
     },
     [theme.breakpoints.up("md")]: {

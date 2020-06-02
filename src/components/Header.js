@@ -20,18 +20,25 @@ export default function Navbar() {
       </Grid>
 
       <Grid item xs={12} sm={8} md={7}>
-        <Grid container alignItems="center">
+        <Grid container justify="center" alignItems="center">
           <h2 className={classes.title}>
             ¡Soluciones de Software hechas por un equipo!
           </h2>
 
           <Grid container className={classes.gridBoxesContainer}>
-            <Grid item xs={12} sm={5} className={classes.gridBox}>
-              <Grid container justify="center">
+            <Grid
+              item
+              container
+              alignItems="center"
+              xs={12}
+              sm={5}
+              className={classes.gridBox}
+            >
+              <Grid container justify="center" alignItems="center">
                 <h3 className={classes.titleBox}>
                   ¿Buscas una solución tecnológica para tu negocio?
                 </h3>
-                <Button className={classes.button}>Consultar Servicios</Button>
+                <Button className={classes.button}>Conocer Servicios</Button>
               </Grid>
             </Grid>
 

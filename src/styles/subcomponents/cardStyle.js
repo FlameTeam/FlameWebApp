@@ -143,7 +143,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "4em",
       borderRadius: "50px",
       minWidth: "250px",
-      maxWidth: "400px",
+      maxWidth: "350px",
     },
     [theme.breakpoints.up("sm")]: {
       marginLeft: "1.2em",
@@ -151,6 +151,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: "50px",
       minWidth: "170px",
       maxWidth: "300px",
+      marginBottom: "3em",
     },
     [theme.breakpoints.up("md")]: {
       minWidth: "384px",
@@ -175,7 +176,7 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "2.2em",
       borderRadius: "50px",
       minWidth: "250px",
-      maxWidth: "400px",
+      maxWidth: "350px",
     },
     [theme.breakpoints.up("sm")]: {
       marginLeft: "1.2em",
@@ -183,6 +184,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: "50px",
       minWidth: "170px",
       maxWidth: "300px",
+      marginBottom: "3em",
     },
     [theme.breakpoints.up("md")]: {
       minWidth: "384px",
