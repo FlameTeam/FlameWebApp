@@ -8,7 +8,13 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    height: "70px",
+    [theme.breakpoints.up("xs")]: {
+      height: "70px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "80px",
+      paddingLeft: "2em",
+    },
   },
 }));
 

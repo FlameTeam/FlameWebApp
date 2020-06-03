@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.up("xs")]: {
       paddingBottom: "1em",
+      marginTop: "81px",
     },
     [theme.breakpoints.up("sm")]: {
       paddingTop: "1.5em",
@@ -16,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       paddingTop: "2em",
       paddingBottom: "3em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "91px",
     },
   },
 
@@ -36,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       height: "400px",
     },
+    [theme.breakpoints.up("lg")]: {
+      height: "500px",
+    },
   },
 
   title: {
@@ -55,8 +62,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "2.7em",
     },
     [theme.breakpoints.up("lg")]: {
-      paddingLeft: "2.5em",
-      paddingRight: "2.5em",
+      paddingLeft: "0",
+      paddingRight: "0",
+      fontSize: "3.5em",
     },
   },
 
@@ -74,6 +82,8 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "1em",
       maxWidth: "270px",
       marginBottom: "2em",
+      marginLeft: "1em",
+      marginRight: "1em",
       width: "100%",
     },
     [theme.breakpoints.up("sm")]: {
@@ -81,8 +91,6 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "1em",
       maxWidth: "230px",
       marginBottom: "2em",
-      marginLeft: "1em",
-      marginRight: "1em",
     },
     [theme.breakpoints.up("md")]: {
       paddingTop: "2em",
@@ -90,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "300px",
     },
     [theme.breakpoints.up("lg")]: {
-      height: "200px",
+      width: "100%",
     },
   },
 
@@ -99,11 +107,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "normal",
     textAlign: "center",
 
-    width: "80%",
     margin: "auto",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "1.3em",
+      width: "80%",
     },
     [theme.breakpoints.up("sm")]: {
       fontSize: "1.2em",
@@ -112,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.3em",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "1.5em",
+      fontSize: "1.8em",
     },
   },
 
@@ -140,6 +148,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "2em",
       paddingRight: "2em",
       fontSize: "1.1em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      paddingLeft: "2em",
+      paddingRight: "2em",
+      fontSize: "1.4em",
     },
   },
 }));

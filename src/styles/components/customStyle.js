@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "1em",
     },
     [theme.breakpoints.up("md")]: {},
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: "2.5em",
+      paddingBottom: "2.5em",
+    },
   },
 
   title: {
@@ -34,7 +37,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       fontSize: "2.7em",
     },
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "3em",
+    },
   },
 
   gradientBackground: {
@@ -54,7 +59,10 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: "3em",
       paddingBottom: "3em",
     },
-    [theme.breakpoints.up("lg")]: {},
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: "4em",
+      paddingBottom: "4em",
+    },
   },
 }));
 

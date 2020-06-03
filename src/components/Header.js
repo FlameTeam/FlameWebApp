@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <Grid container className={classes.header}>
-      <Grid item xs={12} sm={4} md={5} className={classes.imageGrid}>
+      <Grid item xs={12} sm={4} md={5} lg={6} className={classes.imageGrid}>
         <img
           alt="girl-in-desk"
           src={GirlInDeskImage}
@@ -19,7 +19,7 @@ export default function Navbar() {
         />
       </Grid>
 
-      <Grid item xs={12} sm={8} md={7}>
+      <Grid item xs={12} sm={8} md={7} lg={6}>
         <Grid container justify="center" alignItems="center">
           <h2 className={classes.title}>
             ¡Soluciones de Software hechas por un equipo!

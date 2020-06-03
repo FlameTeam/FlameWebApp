@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       paddingBottom: "4em",
     },
+    [theme.breakpoints.up("lg")]: {
+      paddingBottom: "5.5em",
+    },
   },
 
   title: {
@@ -34,6 +37,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "0.6em",
       fontSize: "2.7em",
     },
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: "1.4em",
+      paddingLeft: "0.6em",
+      fontSize: "3em",
+    },
   },
 
   form: {
@@ -52,6 +60,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       width: "50%",
     },
+
+    [theme.breakpoints.up("lg")]: {
+      width: "60%",
+    },
   },
 
   textFieldsBox: {
@@ -66,6 +78,12 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
     marginBottom: "1em",
+    padding: "0",
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.2em",
+      padding: "0.2em",
+    },
   },
 
   emailPhoneTextFieldGrid: {
@@ -84,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: "95%",
     },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.2em",
+      padding: "0.2em",
+    },
   },
 
   textFieldMessage: {
@@ -92,6 +114,11 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
     marginBottom: "1em",
+
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.2em",
+      padding: "0.2em",
+    },
   },
 
   input: {
@@ -128,6 +155,9 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("sm")]: {
       width: "30%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.3em",
     },
   },
 }));

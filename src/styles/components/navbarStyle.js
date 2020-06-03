@@ -5,13 +5,21 @@ const useStyles = makeStyles((theme) => ({
     background: "#FFFFFF",
     paddingTop: "0.4em",
     paddingBottom: "0.3em",
+    position: "fixed",
+    top: "0",
   },
 
   navbarContainer: {
     width: "100%",
     display: "flex",
     justifyContent: "space-between",
-    height: "70px",
+
+    [theme.breakpoints.up("md")]: {
+      height: "70px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "80px",
+    },
   },
 
   drawer: {

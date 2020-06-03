@@ -24,11 +24,24 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       width: "50%",
     },
+    [theme.breakpoints.up("lg")]: {
+      display: "flex",
+      width: "55%",
+      height: "1.8em",
+      marginTop: "1.55em",
+    },
   },
 
   listItemLink: {
     color: "#FFFFFF",
     cursor: "pointer",
+
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "1.2em",
+    },
   },
 }));
 
