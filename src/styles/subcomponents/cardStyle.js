@@ -100,8 +100,8 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "3em",
     },
     [theme.breakpoints.up("lg")]: {
-      marginLeft: "2em",
-      marginRight: "2em",
+      marginLeft: "3em",
+      marginRight: "3em",
     },
   },
 
@@ -135,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "3em",
     },
     [theme.breakpoints.up("lg")]: {
-      marginLeft: "2em",
+      marginLeft: "3em",
       marginRight: "2em",
     },
   },
