@@ -36,11 +36,6 @@ export default function Contact() {
   const [phoneState, setPhone] = useState("");
   const [messageState, setMessage] = useState("");
 
-  console.log(nameState);
-  console.log(emailState);
-  console.log(phoneState);
-  console.log(messageState);
-
   return (
     <ThemeProvider theme={theme}>
       <Box className={classes.contact}>

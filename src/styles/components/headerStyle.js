@@ -35,9 +35,11 @@ const useStyles = makeStyles((theme) => ({
       height: "300px",
     },
     [theme.breakpoints.up("sm")]: {
-      height: "300px",
+      width: "140%",
+      marginLeft: "1em",
     },
     [theme.breakpoints.up("md")]: {
+      width: "auto",
       height: "400px",
     },
     [theme.breakpoints.up("lg")]: {
@@ -63,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       paddingLeft: "0",
-      paddingRight: "0",
+      paddingRight: "1em",
       fontSize: "3.5em",
     },
   },
@@ -91,11 +93,13 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "1em",
       maxWidth: "230px",
       marginBottom: "2em",
+      marginRight: "-6px",
     },
     [theme.breakpoints.up("md")]: {
       paddingTop: "2em",
       paddingBottom: "2em",
       maxWidth: "300px",
+      marginRight: "1em",
     },
     [theme.breakpoints.up("lg")]: {
       width: "100%",
@@ -114,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
       width: "80%",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "1.2em",
+      fontSize: "1em",
     },
     [theme.breakpoints.up("md")]: {
       fontSize: "1.3em",
@@ -142,7 +146,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       paddingLeft: "0.7em",
       paddingRight: "0.7em",
-      fontSize: "1em",
+      fontSize: "0.9em",
     },
     [theme.breakpoints.up("md")]: {
       paddingLeft: "2em",
