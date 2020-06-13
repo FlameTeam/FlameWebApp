@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 import {
   createMuiTheme,
@@ -36,12 +37,33 @@ export default function Contact() {
   const [phoneState, setPhone] = useState("");
   const [messageState, setMessage] = useState("");
 
+  const state = {
+    nameState,
+    emailState,
+    phoneState,
+    messageState,
+  };
+
+  const handleSubmit = async (event) => {
+    console.log("\n[FlameWebApp][Contact][handleSubmit][Request]:", state);
+
+    event.preventDefault();
+    await axios
+      .post("http://localhost:3001/mail/sendMail", state)
+      .then(() =>
+        console.log("[FlameWebApp][Contact][handleSubmit][Done][Send]:", state)
+      )
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Box className={classes.contact}>
         <h3 className={classes.title}>Contacto</h3>
 
-        <form className={classes.form}>
+        <form className={classes.form} onSubmit={handleSubmit}>
           <Box className={classes.textFieldsBox}>
             <TextField
               autoComplete="off"
@@ -114,7 +136,9 @@ export default function Contact() {
               }}
             />
 
-            <Button className={classes.button}>Enviar</Button>
+            <Button type="submit" className={classes.button}>
+              Enviar
+            </Button>
           </Box>
         </form>
       </Box>
