@@ -35,7 +35,7 @@ export default function Navbar() {
           onClick={toggleDrawer}
           onKeyDown={toggleDrawer}
         >
-          {/* <List>
+          <List>
             <Link
               activeClass="active"
               to="header"
@@ -114,7 +114,7 @@ export default function Navbar() {
                 Saber Más
               </ListItem>
             </Link>
-          </List> */}
+          </List>
         </Box>
       </Drawer>
     );
