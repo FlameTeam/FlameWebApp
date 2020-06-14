@@ -37,11 +37,17 @@ export default function Contact() {
   const [phoneState, setPhone] = useState("");
   const [messageState, setMessage] = useState("");
 
+  const [buttonState, setButton] = useState(false);
+
   const state = {
     nameState,
     emailState,
     phoneState,
     messageState,
+  };
+
+  const handleClick = () => {
+    setButton(true);
   };
 
   const handleSubmit = async (event) => {
@@ -53,8 +59,9 @@ export default function Contact() {
       .then(() =>
         console.log("[FlameWebApp][Contact][handleSubmit][Done][Send]:", state)
       )
-      .catch((err) => {
-        console.error(err);
+      .catch((error) => {
+        console.log("[FlameWebApp][Contact][handleSubmit][Error]:", error);
+        console.log("[FlameWebApp][Contact][handleSubmit][Done]");
       });
   };
 
@@ -136,9 +143,17 @@ export default function Contact() {
               }}
             />
 
-            <Button type="submit" className={classes.button}>
+            <Button
+              type="submit"
+              className={classes.button}
+              onClick={handleClick}
+              disabled={buttonState}
+            >
               Enviar
             </Button>
+            <p className={classes.formAction}>
+              {buttonState === true ? "Mensaje enviado!" : ""}
+            </p>
           </Box>
         </form>
       </Box>

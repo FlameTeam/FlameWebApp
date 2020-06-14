@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import useStyles from "../../../styles/subcomponents/columnStyle";
 import { Grid, Link } from "@material-ui/core";
 
-export default function Column({ type, info, lastColumn }) {
+export default function Column({ type, info }) {
   const classes = useStyles();
   const subtitles = info.subtitles;
 

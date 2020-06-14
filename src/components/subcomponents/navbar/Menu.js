@@ -30,7 +30,7 @@ export default function Menu() {
         duration={1000}
         className={classes.scrollLink}
       >
-        <li>Servicios</li>
+        <li className={classes.listItemLink}>Servicios</li>
       </Link>
       <Link
         activeClass="active"
@@ -41,7 +41,7 @@ export default function Menu() {
         duration={1000}
         className={classes.scrollLink}
       >
-        <li>Contacto</li>
+        <li className={classes.listItemLink}>Contacto</li>
       </Link>
       <Link
         activeClass="active"
@@ -52,7 +52,7 @@ export default function Menu() {
         duration={1000}
         className={classes.scrollLink}
       >
-        <li>Nuestro Equipo</li>
+        <li className={classes.listItemLink}>Nuestro Equipo</li>
       </Link>
       <Link
         activeClass="active"
@@ -63,7 +63,7 @@ export default function Menu() {
         duration={1000}
         className={classes.scrollLink}
       >
-        <li>Saber Más</li>
+        <li className={classes.listItemLink}>Saber Más</li>
       </Link>
     </ul>
   );

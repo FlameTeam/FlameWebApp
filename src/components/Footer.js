@@ -21,10 +21,7 @@ export function Footer({ error }) {
       <Grid item style={{ width: "100%" }}>
         <Grid container className={customClasses.gridBoxesContainer}>
           {footerSection.map(function(info, i) {
-            if (footerSection.length - 1 === i) {
-              return <Column key={info.id} info={info} lastColumn={true} />;
-            }
-            return <Column key={info.id} info={info} lastColumn={false} />;
+            return <Column key={info.id} info={info} />;
           })}
 
           <Grid item xs={10} sm={3} className={columnsClasses.gridLastBox}>

@@ -9,7 +9,6 @@ const subtitle = "Ingeniero Civil en Computación";
 const github_icon = "icon/github_icon.svg";
 const linkedin_icon = "icon/linkedin_icon.svg";
 
-//Definiendo data de prueba
 export const serviceSection = [
   {
     id: 1,
@@ -67,9 +66,13 @@ export const footerSection = [
     id: 1,
     title: "Flame",
     subtitles: [
-      { name: "Sobre Flame", link: "" },
-      { name: "Acuerdos y condiciones de trabajo", link: "" },
-      { name: "Tecnologías", link: "" },
+      {
+        name: "Sobre Flame",
+        link:
+          "https://www.linkedin.com/company/flamedev/about/?viewAsMember=true",
+      },
+
+      { name: "Tecnologías", link: "https://github.com/FlameTeam" },
     ],
   },
   {
