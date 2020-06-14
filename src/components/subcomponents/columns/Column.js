@@ -7,15 +7,8 @@ export default function Column({ type, info, lastColumn }) {
   const classes = useStyles();
   const subtitles = info.subtitles;
 
-  let ColumnStyle;
-  if (lastColumn) {
-    ColumnStyle = classes.gridLastBox;
-  } else {
-    ColumnStyle = classes.gridBox;
-  }
-
   return (
-    <Grid item xs={10} sm={3} className={ColumnStyle}>
+    <Grid item xs={10} sm={3} className={classes.gridBox}>
       <Grid container>
         <h3 className={classes.titleBox}>{info.title}</h3>
       </Grid>

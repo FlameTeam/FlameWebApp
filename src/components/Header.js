@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Grid, Button } from "@material-ui/core";
+import { Link } from "react-scroll";
 
 import GirlInDeskImage from "../images/girl-in-desk2.svg";
 
@@ -10,7 +11,7 @@ export default function Navbar() {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.header}>
+    <Grid container className={classes.header} id="header">
       <Grid item xs={12} sm={4} md={5} lg={6} className={classes.imageGrid}>
         <img
           alt="girl-in-desk"
@@ -38,7 +39,16 @@ export default function Navbar() {
                 <h3 className={classes.titleBox}>
                   ¿Buscas una solución tecnológica para tu negocio?
                 </h3>
-                <Button className={classes.button}>Conocer Servicios</Button>
+                <Link
+                  activeClass="active"
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={900}
+                >
+                  <Button className={classes.button}>Conocer Servicios</Button>
+                </Link>
               </Grid>
             </Grid>
 

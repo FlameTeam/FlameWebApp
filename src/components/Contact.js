@@ -60,7 +60,7 @@ export default function Contact() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box className={classes.contact}>
+      <Box className={classes.contact} id="contact">
         <h3 className={classes.title}>Contacto</h3>
 
         <form className={classes.form} onSubmit={handleSubmit}>

@@ -35,13 +35,14 @@ export default function CardMember({ card, lastCard }) {
           <Grid container justify="center">
             {contacts.map(function(contact, j) {
               return (
-                <img
-                  key={j}
-                  src={contact.icon}
-                  alt="icon"
-                  href={contact.link}
-                  className={classes.icon_img}
-                />
+                <a href={contact.link}>
+                  <img
+                    key={j}
+                    src={contact.icon}
+                    alt="icon"
+                    className={classes.icon_img}
+                  />
+                </a>
               );
             })}
           </Grid>

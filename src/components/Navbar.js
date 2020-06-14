@@ -10,6 +10,8 @@ import {
   IconButton,
 } from "@material-ui/core";
 
+import { Link } from "react-scroll";
+
 import MenuIcon from "@material-ui/icons/Menu";
 
 import Logo from "./subcomponents/navbar/Logo";
@@ -33,38 +35,86 @@ export default function Navbar() {
           onClick={toggleDrawer}
           onKeyDown={toggleDrawer}
         >
-          <List>
-            <ListItem
-              onClick={toggleDrawer}
-              className={classes.listLinkResponsive}
+          {/* <List>
+            <Link
+              activeClass="active"
+              to="header"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
             >
-              Inicio
-            </ListItem>
-            <ListItem
-              onClick={toggleDrawer}
-              className={classes.listLinkResponsive}
+              <ListItem
+                onClick={toggleDrawer}
+                className={classes.listLinkResponsive}
+              >
+                Inicio
+              </ListItem>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
             >
-              Servicios
-            </ListItem>
-            <ListItem
-              onClick={toggleDrawer}
-              className={classes.listLinkResponsive}
+              <ListItem
+                onClick={toggleDrawer}
+                className={classes.listLinkResponsive}
+              >
+                Servicios
+              </ListItem>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
             >
-              Contacto
-            </ListItem>
-            <ListItem
-              onClick={toggleDrawer}
-              className={classes.listLinkResponsive}
+              <ListItem
+                onClick={toggleDrawer}
+                className={classes.listLinkResponsive}
+              >
+                Contacto
+              </ListItem>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
             >
-              Nuestro Equipo
-            </ListItem>
-            <ListItem
-              onClick={toggleDrawer}
-              className={classes.listLinkResponsive}
+              <ListItem
+                onClick={toggleDrawer}
+                className={classes.listLinkResponsive}
+              >
+                Nuestro Equipo
+              </ListItem>
+            </Link>
+            <Link
+              activeClass="active"
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
             >
-              Saber Más
-            </ListItem>
-          </List>
+              <ListItem
+                onClick={toggleDrawer}
+                className={classes.listLinkResponsive}
+              >
+                Saber Más
+              </ListItem>
+            </Link>
+          </List> */}
         </Box>
       </Drawer>
     );

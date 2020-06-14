@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
 
   icon_img: {
     paddingRight: "5px",
+    cursor: "pointer",
 
     [theme.breakpoints.up("xs")]: {
       width: "20px",
