@@ -55,7 +55,7 @@ export default function Contact() {
 
     event.preventDefault();
     await axios
-      .post("http://localhost:3001/mail/sendMail", state)
+      .post("https://flame-280323.ue.r.appspot.com/mail/sendMail", state)
       .then(() =>
         console.log("[FlameWebApp][Contact][handleSubmit][Done][Send]:", state)
       )
