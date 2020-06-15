@@ -5,7 +5,6 @@ import { Services } from "../components/Services";
 import { Team } from "../components/Team";
 import { Footer } from "../components/Footer";
 
-const subtitle = "Ingeniero Civil en Computación";
 const github_icon = "icon/github_icon.svg";
 const linkedin_icon = "icon/linkedin_icon.svg";
 
@@ -32,10 +31,10 @@ export const teamSection = [
     id: 1,
     img: "img/dixon.jpeg",
     title: "Dixon Ortiz",
-    subtitle: subtitle,
+    subtitle: "Ingeniero Civil en Computación",
     roles: [
-      { name: "Desarrollador web Full Stack" },
-      { name: "Diseñador de interface web" },
+      { name: "Desarrollador Web Full Stack" },
+      { name: "Diseñador UX-UI" },
     ],
     contact: [
       { icon: github_icon, link: "https://github.com/DixonOrtiz" },
@@ -49,8 +48,11 @@ export const teamSection = [
     id: 2,
     img: "img/coni.jpeg",
     title: "Constanza Jazme",
-    subtitle: subtitle,
-    roles: [{ name: "Desarrollador web Full Stack" }, { name: "Scrum Master" }],
+    subtitle: "Ingeniera Civil en Computación",
+    roles: [
+      { name: "Desarrolladora Web Full Stack" },
+      { name: "Scrum Master" },
+    ],
     contact: [
       { icon: github_icon, link: "https://github.com/ConstanzaJazme" },
       {
