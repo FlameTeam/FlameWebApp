@@ -159,6 +159,27 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "1.4em",
     },
   },
+
+  dialog: {
+    background: "#FFFFFF",
+  },
+
+  dialogTitle: {
+    color: "#F3705A",
+  },
+
+  dialogText: {
+    color: "#696969",
+  },
+
+  dialogButton: {
+    background: "linear-gradient(90deg, #F3705A 0%, #FFD15C 100%)",
+    textTransform: "capitalize",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    borderRadius: "100px",
+    color: "#FFFFFF",
+    padding: "0.5em 2em",
+  },
 }));
 
 export default useStyles;

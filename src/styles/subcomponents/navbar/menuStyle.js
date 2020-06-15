@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
 
   listItemLink: {
     color: "#FFFFFF",
-    cursor: "pointer",
 
     [theme.breakpoints.up("md")]: {
       fontSize: "1em",
@@ -42,6 +41,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.2em",
     },
+  },
+
+  scrollLink: {
+    cursor: "pointer",
   },
 }));
 

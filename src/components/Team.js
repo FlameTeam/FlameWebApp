@@ -15,7 +15,7 @@ export function Team({ error }) {
   }
 
   return (
-    <Grid container className={Customclasses.header}>
+    <Grid container className={Customclasses.header} id="team">
       <Grid item style={{ width: "100%" }}>
         <h2 className={Customclasses.title}>Nuestro Equipo</h2>
         <Grid container className={Customclasses.gridBoxesContainer}>

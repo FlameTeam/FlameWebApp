@@ -101,6 +101,32 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
+  finalColumnFooter: {
+    color: "#FFFFFF",
+    fontWeight: "normal",
+    textAlign: "left",
+
+    width: "80%",
+    margin: "auto",
+
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "0.9em",
+      marginBottom: "0.5em",
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: "0.9em",
+      marginBottom: "0.5em",
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "1em",
+      marginBottom: "0.6em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginBottom: "1rem",
+      fontSize: "1rem",
+    },
+  },
+
   // ____________________________________ Line __________________________________
 
   line: {

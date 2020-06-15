@@ -15,7 +15,7 @@ export function Services({ error }) {
   }
 
   return (
-    <Grid container className={Customclasses.header}>
+    <Grid container className={Customclasses.header} id="services">
       <Grid item style={{ width: "100%" }}>
         <h2 className={Customclasses.title}>Nuestros Servicios</h2>
         <Grid container className={Customclasses.gridBoxesContainer}>

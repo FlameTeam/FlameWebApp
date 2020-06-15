@@ -3,19 +3,12 @@ import PropTypes from "prop-types";
 import useStyles from "../../../styles/subcomponents/columnStyle";
 import { Grid, Link } from "@material-ui/core";
 
-export default function Column({ type, info, lastColumn }) {
+export default function Column({ type, info }) {
   const classes = useStyles();
   const subtitles = info.subtitles;
 
-  let ColumnStyle;
-  if (lastColumn) {
-    ColumnStyle = classes.gridLastBox;
-  } else {
-    ColumnStyle = classes.gridBox;
-  }
-
   return (
-    <Grid item xs={10} sm={3} className={ColumnStyle}>
+    <Grid item xs={10} sm={3} className={classes.gridBox}>
       <Grid container>
         <h3 className={classes.titleBox}>{info.title}</h3>
       </Grid>
