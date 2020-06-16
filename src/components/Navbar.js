@@ -4,6 +4,8 @@ import { AppBar, Toolbar, Grid } from "@material-ui/core";
 
 import Logo from "./subcomponents/navbar/Logo";
 import Menu from "./subcomponents/navbar/Menu";
+import HamburgerMenu from "./subcomponents/navbar/HamburgerMenu";
+import Drawer from "./subcomponents/navbar/Drawer";
 
 import useStyles from "../resources/styles/sectionsStyle";
 
@@ -15,6 +17,8 @@ export default function Navbar() {
     setDrawer(!drawerState);
   };
 
+  console.log(drawerState);
+
   return (
     <Fragment>
       <AppBar position="fixed">
@@ -25,10 +29,12 @@ export default function Navbar() {
             </Grid>
             <Grid item xs={2} md={7}>
               <Menu />
+              <HamburgerMenu toggleDrawer={toggleDrawer} />
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
+      <Drawer drawerState={drawerState} toggleDrawer={toggleDrawer} />
     </Fragment>
   );
 }

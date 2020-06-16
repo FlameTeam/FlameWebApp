@@ -17,6 +17,6 @@ export const menuData = [
   },
   {
     content: "Saber Más",
-    link: "aboutus",
+    link: "footer",
   },
 ];
