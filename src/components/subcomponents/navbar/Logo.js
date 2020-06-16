@@ -2,7 +2,7 @@ import React from "react";
 
 import flameLogo from "../../../images/Logo.svg";
 
-import useStyles from "../../../styles/subcomponents/navbar/logoStyle";
+import useStyles from "../../../resources/styles/subcomponents/navbar/logoStyle";
 
 export default function Logo() {
   const classes = useStyles();

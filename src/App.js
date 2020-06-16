@@ -1,31 +1,26 @@
-import React, { useContext } from "react";
-import ThemeContext from "./theme-context";
+import React from "react";
 
-import { Box } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { theme } from "./resources/materialUITheme";
+
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import Team from "./components/Team";
-import Footer from "./components/Footer";
+// import Header from "./components/Header";
+// import Services from "./components/Services";
+// import Contact from "./components/Contact";
+// import Team from "./components/Team";
+// import Footer from "./components/Footer";
 
-const FLAME_MAILER_API_URL = process.env.FLAME_MAILER_API_URL;
-
-function App() {
-  const theme = useContext(ThemeContext);
-
+const App = () => {
   return (
-    <ThemeContext.Provider theme={theme}>
-      <Box style={theme}>
-        <Navbar />
-        <Header />
-        <Services />
-        <Contact flameURL={FLAME_MAILER_API_URL} />
-        <Team />
-        <Footer />
-      </Box>
-    </ThemeContext.Provider>
+    <ThemeProvider theme={theme}>
+      <Navbar />
+      {/* <Header />
+      <Services />
+      <Contact />
+      <Team />
+      <Footer /> */}
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

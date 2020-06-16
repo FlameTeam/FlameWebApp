@@ -1,70 +1,32 @@
 import React from "react";
-
 import { Link } from "react-scroll";
 
-import useStyles from "../../../styles/subcomponents/navbar/menuStyle";
+import { menuData } from "../../../resources/data/menuData";
+import { Typography } from "@material-ui/core";
+
+import useStyles from "../../../resources/styles/subcomponents/navbar/menuStyle";
 
 export default function Menu() {
   const classes = useStyles();
 
   return (
     <ul className={classes.list}>
-      <Link
-        activeClass="active"
-        to="header"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={1000}
-        className={classes.scrollLink}
-      >
-        <li className={classes.listItemLink}>Inicio</li>
-      </Link>
-
-      <Link
-        activeClass="active"
-        to="services"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={1000}
-        className={classes.scrollLink}
-      >
-        <li className={classes.listItemLink}>Servicios</li>
-      </Link>
-      <Link
-        activeClass="active"
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={1000}
-        className={classes.scrollLink}
-      >
-        <li className={classes.listItemLink}>Contacto</li>
-      </Link>
-      <Link
-        activeClass="active"
-        to="team"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={1000}
-        className={classes.scrollLink}
-      >
-        <li className={classes.listItemLink}>Nuestro Equipo</li>
-      </Link>
-      <Link
-        activeClass="active"
-        to="footer"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={1000}
-        className={classes.scrollLink}
-      >
-        <li className={classes.listItemLink}>Saber Más</li>
-      </Link>
+      {menuData.map((listItem, i) => {
+        return (
+          <Typography key={i}>
+            <Link
+              activeClass="active"
+              to={listItem.link}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1100}
+            >
+              <li className={classes.listItemLink}>{listItem.content}</li>
+            </Link>
+          </Typography>
+        );
+      })}
     </ul>
   );
 }

@@ -2,8 +2,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   logoBox: {
-    display: "flex",
-    alignItems: "center",
     cursor: "pointer",
   },
 
@@ -13,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       height: "80px",
-      paddingLeft: "2em",
     },
   },
 }));
