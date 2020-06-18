@@ -17,8 +17,6 @@ export default function Navbar() {
     setDrawer(!drawerState);
   };
 
-  console.log(drawerState);
-
   return (
     <Fragment>
       <AppBar position="fixed">

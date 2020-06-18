@@ -4,7 +4,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./resources/materialUITheme";
 
 import Navbar from "./components/Navbar";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 // import Services from "./components/Services";
 // import Contact from "./components/Contact";
 // import Team from "./components/Team";
@@ -14,8 +14,8 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      {/* <Header />
-      <Services />
+      <Header />
+      {/* <Services />
       <Contact />
       <Team />
       <Footer /> */}

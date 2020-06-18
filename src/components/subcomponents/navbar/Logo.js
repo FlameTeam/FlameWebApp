@@ -1,6 +1,6 @@
 import React from "react";
 
-import flameLogo from "../../../images/Logo.svg";
+import flameLogo from "../../../resources/images/Logo.svg";
 
 import useStyles from "../../../resources/styles/subcomponents/navbar/logoStyle";
 
