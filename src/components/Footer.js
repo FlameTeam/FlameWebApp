@@ -1,12 +1,12 @@
 import React from "react";
 import useCustomStyles from "../resources/styles/customStyle";
-import columnStyles from "../styles/subcomponents/columnStyle";
-import { Grid } from "@material-ui/core";
+import columnStyles from "../resources/styles/subcomponents/footer/columnStyle";
+import { Grid, Typography } from "@material-ui/core";
 
 import Column from "./subcomponents/columns/Column";
 import Errors from "./subcomponents/Errors";
 
-import { footerSection } from "../stories/ScreenSection.stories"; //json with data
+import { footerData } from "../resources/data/footerData";
 
 export function Footer({ error }) {
   const customClasses = useCustomStyles();
@@ -20,29 +20,31 @@ export function Footer({ error }) {
     <Grid container className={customClasses.gradientBackground} id="footer">
       <Grid item style={{ width: "100%" }}>
         <Grid container className={customClasses.gridBoxesContainer}>
-          {footerSection.map(function(info, i) {
+          {footerData.map(function(info, i) {
             return <Column key={info.id} info={info} />;
           })}
 
           <Grid item xs={10} sm={3} className={columnsClasses.gridLastBox}>
             <Grid container>
-              <h3 className={columnsClasses.titleBox}>Contacto</h3>
+              <Typography variant="h3" className={columnsClasses.titleBox}>
+                Contacto
+              </Typography>
             </Grid>
             <hr className={columnsClasses.line} />
             <Grid container justify="center">
-              <p className={columnsClasses.finalColumnFooter}>
+              <Typography className={columnsClasses.finalColumnFooter}>
                 Celular: 9 46200158
-              </p>
+              </Typography>
             </Grid>
             <Grid container justify="center">
-              <p className={columnsClasses.finalColumnFooter}>
+              <Typography className={columnsClasses.finalColumnFooter}>
                 Email: dixon.ortizc@gmail.com
-              </p>
+              </Typography>
             </Grid>
             <Grid container justify="center">
-              <p className={columnsClasses.finalColumnFooter}>
+              <Typography className={columnsClasses.finalColumnFooter}>
                 Santiago de Chile, 2020
-              </p>
+              </Typography>
             </Grid>
           </Grid>
         </Grid>

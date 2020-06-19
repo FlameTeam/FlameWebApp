@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useStyles from "../../../styles/subcomponents/columnStyle";
-import { Grid, Link } from "@material-ui/core";
+import useStyles from "../../../resources/styles/subcomponents/footer/columnStyle";
+import { Grid, Typography, Link } from "@material-ui/core";
 
 export default function Column({ type, info }) {
   const classes = useStyles();
@@ -10,14 +10,16 @@ export default function Column({ type, info }) {
   return (
     <Grid item xs={10} sm={3} className={classes.gridBox}>
       <Grid container>
-        <h3 className={classes.titleBox}>{info.title}</h3>
+        <Typography variant="h3" className={classes.titleBox}>
+          {info.title}
+        </Typography>
       </Grid>
       <hr className={classes.line} />
       {subtitles.map(function(subtitle, i) {
         return (
           <Grid container justify="center" key={i}>
             <Link href={subtitle.link} className={classes.subtitlesBox}>
-              {subtitle.name}
+              <Typography>{subtitle.name}</Typography>
             </Link>
           </Grid>
         );

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import useStyles from "../../../styles/subcomponents/cardStyle";
+import useStyles from "../../../resources/styles/subcomponents/cards/cardStyle";
 import { Grid, Typography } from "@material-ui/core";
 
 export default function ServiceCard({ card }) {

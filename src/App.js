@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
       <Services />
       <Contact />
       <Team />
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 };
