@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-// import Team from "./components/Team";
+import Team from "./components/Team";
 // import Footer from "./components/Footer";
 
 const App = () => {
@@ -17,8 +17,8 @@ const App = () => {
       <Header />
       <Services />
       <Contact />
-      {/* <Team />
-      <Footer /> */}
+      <Team />
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 };

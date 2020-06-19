@@ -1,5 +1,5 @@
 import React from "react";
-import useCustomStyles from "../styles/components/customStyle";
+import useCustomStyles from "../resources/styles/customStyle";
 import columnStyles from "../styles/subcomponents/columnStyle";
 import { Grid } from "@material-ui/core";
 

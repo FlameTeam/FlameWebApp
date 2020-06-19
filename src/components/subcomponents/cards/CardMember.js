@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import useStyles from "../../../styles/subcomponents/cardStyle";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 export default function CardMember({ card, lastCard }) {
   const classes = useStyles();
@@ -23,13 +23,18 @@ export default function CardMember({ card, lastCard }) {
         </Grid>
 
         <Grid item xs={12} sm={12} md={8}>
-          <h2 className={classes.firstTitle}> {card.title} </h2>
-          <h3 className={classes.secondTitle}>{card.subtitle}</h3>
+          <Typography variant="h2" className={classes.firstTitle}>
+            {" "}
+            {card.title}{" "}
+          </Typography>
+          <Typography variant="h3" className={classes.secondTitle}>
+            {card.subtitle}
+          </Typography>
           {roles.map(function(role, i) {
             return (
-              <h4 key={i} className={classes.thirdTitle}>
+              <Typography variant="h4" key={i} className={classes.thirdTitle}>
                 {role.name}
-              </h4>
+              </Typography>
             );
           })}
           <Grid container justify="center">

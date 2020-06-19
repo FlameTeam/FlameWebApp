@@ -1,6 +1,6 @@
 import React from "react";
-import useCustomStyles from "../styles/components/customStyle";
-import { Grid } from "@material-ui/core";
+import useCustomStyles from "../resources/styles/customStyle";
+import { Grid, Typography } from "@material-ui/core";
 
 import CardMember from "./subcomponents/cards/CardMember";
 import Errors from "./subcomponents/Errors";
@@ -17,7 +17,9 @@ export function Team({ error }) {
   return (
     <Grid container className={Customclasses.header} id="team">
       <Grid item style={{ width: "100%" }}>
-        <h2 className={Customclasses.title}>Nuestro Equipo</h2>
+        <Typography variant="h2" className={Customclasses.title}>
+          Nuestro Equipo
+        </Typography>
         <Grid container className={Customclasses.gridBoxesContainer}>
           {teamSection.map(function(card, i) {
             if (teamSection.length - 1 === i) {
