@@ -106,41 +106,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  gridLastBox: {
-    boxShadow: "1px 4px 4px rgba(0, 0, 0, 0.25)",
-    borderRadius: "80px",
-
-    [theme.breakpoints.up("xs")]: {
-      marginLeft: "2em",
-      marginRight: "2em",
-      marginBottom: "0",
-      borderRadius: "50px",
-      minWidth: "168px",
-      maxWidth: "390px",
-      paddingTop: "2em",
-      paddingBottom: "2em",
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginBottom: "1em",
-      maxWidth: "350px",
-      minWidth: "180px",
-      marginLeft: "0.6em",
-      marginRight: "0.6em",
-      paddingTop: "1em",
-      paddingBottom: "1em",
-    },
-    [theme.breakpoints.up("md")]: {
-      marginLeft: "2em",
-      marginRight: "2em",
-      paddingTop: "3em",
-      paddingBottom: "3em",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginLeft: "3em",
-      marginRight: "2em",
-    },
-  },
-
   gridBoxLarge: {
     boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "55px",

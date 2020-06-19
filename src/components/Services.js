@@ -1,29 +1,27 @@
 import React from "react";
-import useCustomStyles from "../styles/components/customStyle";
-import { Grid } from "@material-ui/core";
 
-import CardDefault from "./subcomponents/cards/CardDefault";
+import useStyles from "../resources/styles/customStyle";
+import { Grid, Typography } from "@material-ui/core";
+
+import ServiceCard from "./subcomponents/cards/ServiceCard.js";
 import Errors from "./subcomponents/Errors";
 
-import { serviceSection } from "../stories/ScreenSection.stories"; //json with data
+import { servicesData } from "../resources/data/servicesData";
 
 export function Services({ error }) {
-  const Customclasses = useCustomStyles();
+  const classes = useStyles();
 
   if (error) {
     return <Errors type={error} />;
   }
 
   return (
-    <Grid container className={Customclasses.header} id="services">
+    <Grid container className={classes.header} id="services">
       <Grid item style={{ width: "100%" }}>
-        <h2 className={Customclasses.title}>Nuestros Servicios</h2>
-        <Grid container className={Customclasses.gridBoxesContainer}>
-          {serviceSection.map(function(card, i) {
-            if (serviceSection.length - 1 === i) {
-              return <CardDefault key={i} card={card} lastCard={true} />;
-            }
-            return <CardDefault key={i} card={card} lastCard={false} />;
+        <Typography className={classes.title}>Nuestros Servicios</Typography>
+        <Grid container className={classes.gridBoxesContainer}>
+          {servicesData.map(function(card, i) {
+            return <ServiceCard key={i} card={card} />;
           })}
         </Grid>
       </Grid>
