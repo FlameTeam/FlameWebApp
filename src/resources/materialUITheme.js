@@ -5,7 +5,10 @@ const breakpoints = createBreakpoints({});
 
 export const theme = createMuiTheme({
   palette: {
-    text: {},
+    text: {
+      primary: "#0454EF", //Blue
+      secondary: "#FFFFFF", //White
+    },
   },
 
   typography: {
@@ -38,6 +41,21 @@ export const theme = createMuiTheme({
       },
       [breakpoints.up("lg")]: {
         fontSize: "1.7em",
+      },
+    },
+  },
+
+  overrides: {
+    MuiInputLabel: {
+      root: {
+        marginTop: "-10px",
+        marginLeft: "1em",
+        fontSize: "1.1em",
+        color: "#FFFFFF",
+        fontFamily: "Contrail One",
+        "&$focused": {
+          color: "#FFFFFF",
+        },
       },
     },
   },

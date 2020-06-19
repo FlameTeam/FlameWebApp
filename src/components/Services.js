@@ -18,7 +18,9 @@ export function Services({ error }) {
   return (
     <Grid container className={classes.header} id="services">
       <Grid item style={{ width: "100%" }}>
-        <Typography className={classes.title}>Nuestros Servicios</Typography>
+        <Typography variant="h2" className={classes.title}>
+          Nuestros Servicios
+        </Typography>
         <Grid container className={classes.gridBoxesContainer}>
           {servicesData.map(function(card, i) {
             return <ServiceCard key={i} card={card} />;
