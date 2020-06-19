@@ -4,7 +4,7 @@ export const contentBoxData = [
     buttonText: "Conocer Servicios",
   },
   {
-    title: "¿Te gustaría conocer sobre las tecnologías que utilizamos?",
-    buttonText: "Revisar Blog",
+    title: "¿Necesitas un presupuesto de diseño/desarrollo de Software?",
+    buttonText: "Contáctanos",
   },
 ];

@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Grid, Button, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
+import { HeaderButton } from "../../../resources/styles/subcomponents/header/buttonStyle";
 
 import useStyles from "../../../resources/styles/subcomponents/header/contentBoxStyle";
 
@@ -21,7 +22,7 @@ const ContentBox = ({ content }) => {
           {content.title}
         </Typography>
 
-        <Button className={classes.button}>{content.buttonText}</Button>
+        <HeaderButton>{content.buttonText}</HeaderButton>
       </Grid>
     </Grid>
   );
