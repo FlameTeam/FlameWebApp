@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import useStyles from "../../../../resources/styles/subcomponents/contact/textFieldStyle";
 
 import { TextField } from "@material-ui/core";
 
-const PhoneTextField = () => {
+const PhoneTextField = ({ phoneState, setPhone }) => {
   const classes = useStyles();
 
   return (
@@ -12,6 +13,8 @@ const PhoneTextField = () => {
       autoComplete="off"
       id="phone"
       label="Teléfono"
+      value={phoneState}
+      onChange={(e) => setPhone(e.target.value)}
       className={classes.textFieldEmailPhone}
       InputProps={{
         classes: {
@@ -24,3 +27,8 @@ const PhoneTextField = () => {
 };
 
 export default PhoneTextField;
+
+PhoneTextField.propTypes = {
+  phoneState: PropTypes.string.isRequired,
+  setPhone: PropTypes.func,
+};
