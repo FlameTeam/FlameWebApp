@@ -5,7 +5,7 @@ import { Grid, Typography } from "@material-ui/core";
 import CardMember from "./subcomponents/cards/CardMember";
 import Errors from "./subcomponents/Errors";
 
-import { teamSection } from "../stories/ScreenSection.stories"; //json with data
+import { teamData } from "../resources/data/teamData";
 
 export function Team({ error }) {
   const Customclasses = useCustomStyles();
@@ -21,8 +21,8 @@ export function Team({ error }) {
           Nuestro Equipo
         </Typography>
         <Grid container className={Customclasses.gridBoxesContainer}>
-          {teamSection.map(function(card, i) {
-            if (teamSection.length - 1 === i) {
+          {teamData.map(function(card, i) {
+            if (teamData.length - 1 === i) {
               return <CardMember key={i} card={card} lastCard={true} />;
             }
             return <CardMember key={i} card={card} lastCard={false} />;
