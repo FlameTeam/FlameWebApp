@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   contactTitle: {
     fontWeight: "normal",
     color: "#FFFFFF",
+    marginBottom: "1em",
 
     [theme.breakpoints.up("xs")]: {
       paddingTop: "0.8em",

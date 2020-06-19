@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#F45C43",
     fontWeight: "normal",
     textAlign: "left",
+    marginBottom: "1em",
 
     [theme.breakpoints.up("xs")]: {
       fontSize: "2.2em",
