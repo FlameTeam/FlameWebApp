@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-scroll";
 
 import { Grid, Typography } from "@material-ui/core";
 import { HeaderButton } from "../../../resources/styles/subcomponents/header/buttonStyle";
@@ -22,7 +23,16 @@ const ContentBox = ({ content }) => {
           {content.title}
         </Typography>
 
-        <HeaderButton>{content.buttonText}</HeaderButton>
+        <Link
+          activeClass="active"
+          to={content.link}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={1100}
+        >
+          <HeaderButton>{content.buttonText}</HeaderButton>
+        </Link>
       </Grid>
     </Grid>
   );

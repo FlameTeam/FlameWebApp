@@ -10,14 +10,19 @@ const useStyles = makeStyles((theme) => ({
   header: {
     flexGrow: "1",
     alignItem: "center",
-    [theme.breakpoints.up("xs")]: {},
-    [theme.breakpoints.up("sm")]: {
-      paddingTop: "1em",
-      paddingBottom: "1em",
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "1.4em",
     },
-    [theme.breakpoints.up("md")]: {},
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("sm")]: {
       paddingTop: "2.5em",
+      paddingBottom: "1.5em",
+    },
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "3em",
+      paddingBottom: "2em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: "3.5em",
       paddingBottom: "2.5em",
     },
   },

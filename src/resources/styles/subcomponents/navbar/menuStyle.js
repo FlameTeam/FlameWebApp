@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
 
   listItemLink: {
     cursor: "pointer",
+
+    "&:hover": {
+      textDecoration: "underline",
+    },
+
     [theme.breakpoints.up("md")]: {
       fontSize: "1em",
     },

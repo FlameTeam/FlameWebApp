@@ -18,14 +18,12 @@ const Form = () => {
   const [phoneState, setPhone] = useState("");
   const [messageState, setMessage] = useState("");
 
-  const formState = {
-    nameState,
-    emailState,
-    phoneState,
-    messageState,
-  };
-
-  console.log(formState);
+  // const formState = {
+  //   nameState,
+  //   emailState,
+  //   phoneState,
+  //   messageState,
+  // };
 
   return (
     <form className={classes.form}>
