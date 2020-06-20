@@ -29,27 +29,6 @@ const Form = () => {
     message: messageState,
   };
 
-  const handleSubmit = async (event) => {
-    console.log("\n[FlameWebApp][Contact][handleSubmit][Request]:", formState);
-
-    event.preventDefault();
-    await axios
-      .post(
-        "https://flame-mail-api-dot-flame-280910.rj.r.appspot.com/mail/sendMail",
-        formState
-      )
-      .then(() =>
-        console.log(
-          "[FlameWebApp][Contact][handleSubmit][Done][Send]:",
-          formState
-        )
-      )
-      .catch((error) => {
-        console.log("[FlameWebApp][Contact][handleSubmit][Error]:", error);
-        console.log("[FlameWebApp][Contact][handleSubmit][Done]");
-      });
-  };
-
   const stateIsEmpty = (state) => {
     let isEmpty = false;
     for (let key in state) {
@@ -63,8 +42,30 @@ const Form = () => {
     setButton(!buttonState);
   };
 
+  const handleSubmit = async (event) => {
+    console.log("\n[FlameWebApp][Contact][handleSubmit][Request]:", formState);
+
+    event.preventDefault();
+    buttonClick();
+
+    try {
+      await axios.post(
+        "https://flame-mail-api-dot-flame-280910.rj.r.appspot.com/mail/sendMail",
+        formState
+      );
+
+      console.log(
+        "[FlameWebApp][Contact][handleSubmit][Done][Send]:",
+        formState
+      );
+    } catch (err) {
+      console.log("[FlameWebApp][Contact][handleSubmit][Error]:", err);
+      console.log("[FlameWebApp][Contact][handleSubmit][Done]");
+    }
+  };
+
   return (
-    <form className={classes.form} onSubmit={handleSubmit}>
+    <form className={classes.form}>
       <Box className={classes.textFieldsBox}>
         <NameTextField
           formState={formState}
@@ -96,7 +97,7 @@ const Form = () => {
           setButton={setButton}
           stateIsEmpty={stateIsEmpty}
         />
-        <FormButton type="submit" disabled={buttonState} onClick={buttonClick}>
+        <FormButton disabled={buttonState} onClick={handleSubmit}>
           Enviar
         </FormButton>
         <Typography variant="body2" className={classes.formAction}>
