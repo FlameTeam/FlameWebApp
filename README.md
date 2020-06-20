@@ -1,22 +1,17 @@
 # Flame Web App
 
+![FlameFrontend](https://img.shields.io/badge/Flame-Frontend-brightgreen)<br>
+
 Web application developed in react for the organization Flame.
 
-# storybook-react
-some of the components are built with storybook
+## Getting Started
 
-#### Install packages
+- Node v10.19.0 or higher is recommended.
 
-	npm install
+## Install packages
 
-#### See Storybook's components
+    `npm install`
 
-	npm run storybook
+## Start development server in localhost
 
-#### Start development server
-
-	npm start
-
-#### Check changes
-
-  npm test
+    `npm start`
