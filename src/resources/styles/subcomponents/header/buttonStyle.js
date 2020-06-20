@@ -41,6 +41,7 @@ export const FormButton = withStyles((theme) => ({
     fontFamily: "Contrail One",
     borderRadius: "60px",
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+    marginTop: "1em",
 
     "&:hover": {
       color: "#FFFFFF",

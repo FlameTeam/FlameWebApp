@@ -10,6 +10,7 @@ const NameTextField = ({ nameState, setName }) => {
 
   return (
     <TextField
+      margin="dense"
       autoComplete="off"
       id="name"
       label="Nombre"

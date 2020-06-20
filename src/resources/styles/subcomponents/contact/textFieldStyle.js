@@ -1,28 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export const textFieldStyle = makeStyles((theme) => ({
-  input: {
-    color: "white",
-    marginLeft: "1em",
-    marginRight: "1em",
-    fontFamily: "Contrail One",
-  },
-
-  underline: {
-    "&&&:before": {
-      borderBottom: "none",
-    },
-    "&&:after": {
-      borderBottom: "none",
-    },
-  },
-
   textFieldName: {
     borderRadius: "100px",
     background: "#F45C43",
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
-    marginBottom: "1em",
     padding: "0",
 
     [theme.breakpoints.up("lg")]: {
@@ -35,7 +18,6 @@ export const textFieldStyle = makeStyles((theme) => ({
     borderRadius: "100px",
     background: "#F45C43",
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
-    marginBottom: "1em",
 
     [theme.breakpoints.up("xs")]: {
       width: "100%",
@@ -54,7 +36,6 @@ export const textFieldStyle = makeStyles((theme) => ({
     background: "#F45C43",
     boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
-    marginBottom: "1em",
 
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.2em",

@@ -58,5 +58,23 @@ export const theme = createMuiTheme({
         },
       },
     },
+
+    MuiInput: {
+      input: {
+        color: "white",
+        marginLeft: "1em",
+        marginRight: "1em",
+        fontFamily: "Contrail One",
+      },
+
+      underline: {
+        "&&&:before": {
+          borderBottom: "none",
+        },
+        "&&:after": {
+          borderBottom: "none",
+        },
+      },
+    },
   },
 });

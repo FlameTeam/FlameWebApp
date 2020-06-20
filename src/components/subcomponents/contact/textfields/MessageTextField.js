@@ -10,6 +10,7 @@ const MessageTextField = ({ messageState, setMessage }) => {
 
   return (
     <TextField
+      margin="dense"
       autoComplete="off"
       id="message"
       label="Asunto"

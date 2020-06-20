@@ -10,6 +10,7 @@ const EmailTextField = ({ emailState, setEmail }) => {
 
   return (
     <TextField
+      margin="dense"
       autoComplete="off"
       id="email"
       label="Email"

@@ -10,6 +10,7 @@ const PhoneTextField = ({ phoneState, setPhone }) => {
 
   return (
     <TextField
+      margin="dense"
       autoComplete="off"
       id="phone"
       label="Teléfono"
