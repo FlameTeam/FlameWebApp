@@ -43,6 +43,12 @@ export const theme = createMuiTheme({
         fontSize: "1.7em",
       },
     },
+
+    body2: {
+      color: "#FFFFFF",
+      marginTop: "1em",
+      fontSize: "1em",
+    },
   },
 
   overrides: {

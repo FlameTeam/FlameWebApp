@@ -5,8 +5,16 @@ import useStyles from "../../../../resources/styles/subcomponents/contact/textFi
 
 import { TextField } from "@material-ui/core";
 
-const PhoneTextField = ({ phoneState, setPhone }) => {
+const PhoneTextField = ({ formState, setPhone, stateIsEmpty, setButton }) => {
   const classes = useStyles();
+
+  const handleChange = (e) => {
+    setPhone(e.target.value);
+
+    if (stateIsEmpty(formState) === false) {
+      setButton(false);
+    }
+  };
 
   return (
     <TextField
@@ -14,8 +22,8 @@ const PhoneTextField = ({ phoneState, setPhone }) => {
       autoComplete="off"
       id="phone"
       label="Teléfono"
-      value={phoneState}
-      onChange={(e) => setPhone(e.target.value)}
+      value={formState.phone}
+      onChange={handleChange}
       className={classes.textFieldEmailPhone}
       InputProps={{
         classes: {
@@ -30,6 +38,8 @@ const PhoneTextField = ({ phoneState, setPhone }) => {
 export default PhoneTextField;
 
 PhoneTextField.propTypes = {
-  phoneState: PropTypes.string.isRequired,
+  formState: PropTypes.object.isRequired,
   setPhone: PropTypes.func,
+  setButton: PropTypes.func.isRequired,
+  stateIsEmpty: PropTypes.func.isRequired,
 };

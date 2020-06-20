@@ -5,8 +5,21 @@ import useStyles from "../../../../resources/styles/subcomponents/contact/textFi
 
 import { TextField } from "@material-ui/core";
 
-const MessageTextField = ({ messageState, setMessage }) => {
+const MessageTextField = ({
+  formState,
+  setButton,
+  stateIsEmpty,
+  setMessage,
+}) => {
   const classes = useStyles();
+
+  const handleChange = (e) => {
+    setMessage(e.target.value);
+
+    if (stateIsEmpty(formState) === false) {
+      setButton(false);
+    }
+  };
 
   return (
     <TextField
@@ -14,8 +27,8 @@ const MessageTextField = ({ messageState, setMessage }) => {
       autoComplete="off"
       id="message"
       label="Asunto"
-      value={messageState}
-      onChange={(e) => setMessage(e.target.value)}
+      value={formState.message}
+      onChange={handleChange}
       className={classes.textFieldMessage}
       multiline
       rows={3}
@@ -32,6 +45,8 @@ const MessageTextField = ({ messageState, setMessage }) => {
 export default MessageTextField;
 
 MessageTextField.propTypes = {
-  messageState: PropTypes.string.isRequired,
   setMessage: PropTypes.func,
+  formState: PropTypes.object.isRequired,
+  setButton: PropTypes.func.isRequired,
+  stateIsEmpty: PropTypes.func.isRequired,
 };

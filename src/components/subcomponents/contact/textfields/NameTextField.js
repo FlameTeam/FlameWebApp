@@ -5,8 +5,16 @@ import useStyles from "../../../../resources/styles/subcomponents/contact/textFi
 
 import { TextField } from "@material-ui/core";
 
-const NameTextField = ({ nameState, setName }) => {
+const NameTextField = ({ setName, setButton, stateIsEmpty, formState }) => {
   const classes = useStyles();
+
+  const handleChange = (e) => {
+    setName(e.target.value);
+
+    if (stateIsEmpty(formState) === false) {
+      setButton(false);
+    }
+  };
 
   return (
     <TextField
@@ -14,8 +22,8 @@ const NameTextField = ({ nameState, setName }) => {
       autoComplete="off"
       id="name"
       label="Nombre"
-      value={nameState}
-      onChange={(e) => setName(e.target.value)}
+      value={formState.name}
+      onChange={handleChange}
       className={classes.textFieldName}
       InputProps={{
         classes: {
@@ -30,6 +38,8 @@ const NameTextField = ({ nameState, setName }) => {
 export default NameTextField;
 
 NameTextField.propTypes = {
-  nameState: PropTypes.string.isRequired,
-  setName: PropTypes.func,
+  formState: PropTypes.object.isRequired,
+  setName: PropTypes.func.isRequired,
+  setButton: PropTypes.func.isRequired,
+  stateIsEmpty: PropTypes.func.isRequired,
 };

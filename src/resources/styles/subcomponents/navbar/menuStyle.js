@@ -13,8 +13,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       display: "none",
     },
-    [theme.breakpoints.up("md")]: {},
-    [theme.breakpoints.up("lg")]: {},
   },
 
   listItemLink: {
