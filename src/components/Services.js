@@ -16,7 +16,7 @@ export function Services({ error }) {
   }
 
   return (
-    <Grid container className={classes.header} id="services">
+    <Grid container className={classes.services} id="services">
       <Grid item style={{ width: "100%" }}>
         <Typography variant="h2" className={classes.title}>
           Nuestros Servicios

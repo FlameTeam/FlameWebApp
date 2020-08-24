@@ -4,12 +4,15 @@ export const HeaderButton = withStyles((theme) => ({
   root: {
     marginTop: "0.5em",
     height: "41.12px",
-    background: "#F45C43",
+    background: "#FF5235",
     fontFamily: "Contrail One",
     color: "#FFFFFF",
     textTransform: "capitalize",
-    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     borderRadius: "100px",
+
+    '&:hover': {
+      background: "#FF4122",
+   },
 
     [theme.breakpoints.up("xs")]: {
       paddingLeft: "1.4em",
@@ -36,16 +39,15 @@ export const HeaderButton = withStyles((theme) => ({
 
 export const FormButton = withStyles((theme) => ({
   root: {
-    background: "#F45C43",
+    background: "#FF5235",
     color: "#FFFFFF",
     fontFamily: "Contrail One",
     borderRadius: "60px",
-    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     marginTop: "1em",
 
     "&:hover": {
       color: "#FFFFFF",
-      background: "transparent",
+      background: "#FF4122",
     },
 
     [theme.breakpoints.up("xs")]: {

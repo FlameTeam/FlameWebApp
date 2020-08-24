@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   gridBox: {
     background: "#F3705A",
-    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+    boxShadow: "3px 3px 3px 0 rgba(0, 0, 0, 0.15)",
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {

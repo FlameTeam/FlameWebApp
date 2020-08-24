@@ -4,7 +4,6 @@ export const textFieldStyle = makeStyles((theme) => ({
   textFieldName: {
     borderRadius: "100px",
     background: "#F45C43",
-    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
     padding: "0",
 
@@ -17,7 +16,6 @@ export const textFieldStyle = makeStyles((theme) => ({
   textFieldEmailPhone: {
     borderRadius: "100px",
     background: "#F45C43",
-    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
 
     [theme.breakpoints.up("xs")]: {
       width: "100%",
@@ -34,7 +32,6 @@ export const textFieldStyle = makeStyles((theme) => ({
   textFieldMessage: {
     borderRadius: "60px",
     background: "#F45C43",
-    boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
     width: "100%",
 
     [theme.breakpoints.up("lg")]: {

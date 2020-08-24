@@ -24,8 +24,8 @@ export default function CardMember({ card, lastCard }) {
 
         <Grid item xs={12} sm={12} md={8}>
           <Typography variant="h2" className={classes.firstTitle}>
-            {" "}
-            {card.title}{" "}
+            
+            {card.title}
           </Typography>
           <Typography variant="h3" className={classes.secondTitle}>
             {card.subtitle}

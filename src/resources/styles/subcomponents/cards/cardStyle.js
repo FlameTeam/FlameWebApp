@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
+    boxShadow: "4px 4px 4px 0 rgba(0, 0, 0, 0.35)",
 
     [theme.breakpoints.up("xs")]: {
       marginTop: "1rem",
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 
   image: {
     borderRadius: "100%",
+    boxShadow: "4px 4px 4px 0 rgba(0, 0, 0, 0.35)",
 
     [theme.breakpoints.up("xs")]: {
       width: "130px",
@@ -49,6 +51,12 @@ const useStyles = makeStyles((theme) => ({
   icon_img: {
     paddingRight: "5px",
     cursor: "pointer",
+    marginLeft: '2.5px',
+    marginRight: '2.5px',
+    '&:hover': {
+      color: "#969491",
+   },
+
 
     [theme.breakpoints.up("xs")]: {
       width: "20px",
@@ -72,8 +80,9 @@ const useStyles = makeStyles((theme) => ({
   // ____________________________________ Boxes __________________________________
 
   gridBox: {
-    boxShadow: "1px 4px 4px rgba(0, 0, 0, 0.25)",
+    boxShadow: "3px 3px 3px rgba(0, 0, 0, 0.2)",
     borderRadius: "80px",
+    background: '#ffffff',
 
     [theme.breakpoints.up("xs")]: {
       marginLeft: "2em",
@@ -221,7 +230,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   secondTitle: {
-    lineHeight: "23px",
+    lineHeight: "25px",
     color: "#101010",
     fontWeight: "normal",
     textAlign: "center",
@@ -241,6 +250,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "1.3em",
+      marginBottom: '0.5em'
     },
   },
 

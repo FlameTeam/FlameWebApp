@@ -4,12 +4,11 @@ const linkedin_icon = "icon/linkedin_icon.svg";
 export const teamData = [
   {
     id: 1,
-    img: "img/dixon.jpeg",
+    img: "img/dixon.png",
     title: "Dixon Ortiz",
     subtitle: "Ingeniero Civil en Computación",
     roles: [
-      { name: "Desarrollador Web Full Stack" },
-      { name: "Diseñador UX-UI" },
+      { name: "Frontend Developer" }
     ],
     contact: [
       { icon: github_icon, link: "https://github.com/DixonOrtiz" },
@@ -21,12 +20,11 @@ export const teamData = [
   },
   {
     id: 2,
-    img: "img/coni.jpeg",
+    img: "img/coni.png",
     title: "Constanza Jazme",
     subtitle: "Ingeniera Civil en Computación",
     roles: [
-      { name: "Desarrolladora Web Full Stack" },
-      { name: "Scrum Master" },
+      { name: "Frontend Developer" }
     ],
     contact: [
       { icon: github_icon, link: "https://github.com/ConstanzaJazme" },

@@ -27,6 +27,28 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
+  services: {
+    flexGrow: "1",
+    alignItem: "center",
+    backgroundColor: '#F0F0F0',
+
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "1.4em",
+    },
+    [theme.breakpoints.up("sm")]: {
+      paddingTop: "2.5em",
+      paddingBottom: "1.5em",
+    },
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "3em",
+      paddingBottom: "2em",
+    },
+    [theme.breakpoints.up("lg")]: {
+      paddingTop: "3.5em",
+      paddingBottom: "2.5em",
+    },
+  },
+
   title: {
     color: "#F45C43",
     fontWeight: "normal",

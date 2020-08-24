@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#F3705A",
     margin: "auto",
     padding: "2em",
-    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    boxShadow: "3px 3px 3px 0 rgba(0, 0, 0, 0.15)",
     borderRadius: "50px",
 
     [theme.breakpoints.up("xs")]: {
