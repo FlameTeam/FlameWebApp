@@ -1,32 +1,32 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   list: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    listStyleType: "none",
-    background: "linear-gradient(90deg, #F3705A 0%, #FFD15C 100%)",
-    borderRadius: "20px",
-    padding: "0 3em",
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    listStyleType: 'none',
+    background: 'linear-gradient(90deg, #F45C43 0%, #FFD15C 100%)',
+    borderRadius: '20px',
+    padding: '0 3em',
 
-    [theme.breakpoints.down("sm")]: {
-      display: "none",
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
     },
   },
 
   listItemLink: {
-    cursor: "pointer",
+    cursor: 'pointer',
 
-    "&:hover": {
-      textDecoration: "underline",
+    '&:hover': {
+      textDecoration: 'underline',
     },
 
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1em",
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1em',
     },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "1.2em",
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1.2em',
     },
   },
 }));
